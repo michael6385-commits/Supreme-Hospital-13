@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expert Ophthalmologist in Padur | Supreme Hospitals</title>
+    <meta
+      name="description"
+      content="Supreme Hospitals offers expert eye care in Padur & Thiruporur – eye exams, vision correction, and advanced treatment by top ophthalmologists."
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body class="department-page">
+    <div id="header-placeholder"></div>
+
+    <!-- Floating CTA -->
+    <button
+      class="floating-cta ripple"
+      onclick="window.location.href = 'book-an-appointment.html'"
+    >
+      <span class="pulse-ring"></span>
+      <i class="fas fa-calendar-plus"></i>
+      <span>Book an Appointment</span>
+    </button>
+
+    <!-- Appointment Modal Form -->
+    <div class="modal-overlay" id="appointment-modal">
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Request an Appointment</h3>
+          <p>
+            Fill out the form below and our team will get back to you shortly.
+          </p>
+        </div>
+        <form class="appointment-form" onsubmit="event.preventDefault()">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="ophthalmology" selected>Ophthalmology</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="dental">Dental</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="diabetology">Diabetology</option>
+              <option value="psychiatry">Psychiatry</option>
+              <option value="ent">ENT</option>
+              <option value="general-surgery">General Surgery</option>
+              <option value="gastroenterology">Medical Gastroenterology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="obstetrics-gynaecology">
+                Obstetrics & Gynaecology
+              </option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="pain-palliative-care">
+                Pain & Palliative Care
+              </option>
+              <option value="general-medicine">General Medicine</option>
+              <option value="urology">Urology</option>
+              <option value="radiology">Radiology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" required />
+          </div>
+          <div class="form-group full-width">
+            <textarea placeholder="Message / Symptoms" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width btn-glow">
+            Confirm Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO BANNER -->
+
+      <section
+        class="hero-premium"
+        style="
+          background-image: url('images/ophthalmology_banner.png');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Department</span> <i class="fas fa-chevron-right"></i>
+              <span class="current">Ophthalmology</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Supreme Excellence</h5>
+            <h1>Department of Ophthalmology</h1>
+            <p class="hero-subtitle">
+              Your vision for a brighter future. Exceptional care for your
+              precious gift of sight by highly skilled experts.
+            </p>
+            <div class="hero-btns mt-5 stagger-1">
+              <a
+                href="book-an-appointment.html"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Book Appointment</a
+              >
+              <a
+                href="contact-us.html"
+                class="btn btn-outline-white btn-lg px-5 ml-md-3"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: OVERVIEW -->
+      <section class="partner-section section-padding bg-white">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h2 style="color: #0b5b9c; font-weight: 700; font-size: 2.2rem; margin-bottom: 40px; font-family: 'Outfit', sans-serif;">Your Vision for a Brighter Future</h2>
+          </div>
+          <div class="row align-center flex-wrap mt-4">
+            <div class="col-md-6 fade-up">
+              <p class="text-muted leading-relaxed mb-4">
+                Protecting your precious gift of sight is paramount. At Supreme Ophthalmology, our highly skilled and experienced <strong>Eye Specialist</strong> is dedicated to providing exceptional care for all your eye health needs. We understand the importance of clear vision for maintaining a high quality of life, and we are committed to helping you achieve and maintain optimal visual health at every stage of life.
+              </p>
+              <p class="text-muted leading-relaxed mb-0">
+                We offer a comprehensive range of services, utilizing cutting-edge technology and personalized treatment plans to address a wide variety of eye conditions. Whether you require routine eye exams, treatment for a specific eye disease, or vision correction solutions, our team is here to guide you on your journey to optimal vision.
+              </p>
+            </div>
+            <div class="col-md-6 fade-up stagger-1 mt-sm-5 text-center">
+              <div class="dept-media-card box-shadow">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1781598282/97a87767-652a-47aa-953e-347e76e6da16_qzarag.png"
+                  alt="Supreme Ophthalmology Overview"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: TYPES OF CARE (AUTO SCROLL WITH PREMIUM CARDS) -->
+      <section class="treatments-scroll-section section-padding bg-soft-blue">
+        <div class="container-fluid p-0">
+          <div class="section-title text-center mb-5 fade-up">
+            <h5 class="subtitle text-accent">Complete Care Spectrum</h5>
+            <h2 style="color: #0b5b9c; font-size: 2.2rem; font-weight: 700; font-family: 'Outfit', sans-serif;">Types of Ophthalmology Care at Supreme Ophthalmology</h2>
+            <div class="title-line mx-auto"></div>
+            <p class="text-muted mt-3" style="font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto; padding: 0 15px;">
+              Our <strong>Eye Specialist</strong> provide a full spectrum of ophthalmic care, including:
+            </p>
+          </div>
+
+          <div class="scroller-container mt-5">
+            <div class="scroller-inner">
+              <!-- Care 1: Comprehensive Eye Exams -->
+              <div class="aspects-card fade-up">
+                <div class="icon-wrapper">
+                  <i class="fas fa-eye"></i>
+                </div>
+                <h3>Comprehensive Eye Exams</h3>
+                <p>
+                  We recommend regular eye exams for everyone, regardless of age or perceived vision problems. These exams allow us to assess your overall eye health, detect potential issues early on, and ensure your vision stays sharp.
+                </p>
+              </div>
+
+              <!-- Care 2: Vision Correction -->
+              <div class="aspects-card fade-up stagger-1">
+                <div class="icon-wrapper">
+                  <i class="fas fa-glasses"></i>
+                </div>
+                <h3>Vision Correction</h3>
+                <p>
+                  We offer a variety of vision correction options to suit your individual needs and preferences. This may include eyeglasses, contact lenses, or even refractive surgery procedures such as LASIK.
+                </p>
+              </div>
+
+              <!-- Care 3: Medical Ophthalmology -->
+              <div class="aspects-card fade-up stagger-2">
+                <div class="icon-wrapper">
+                  <i class="fas fa-file-medical"></i>
+                </div>
+                <h3>Medical Ophthalmology</h3>
+                <p>
+                  Our specialists diagnose and treat a wide range of eye diseases, including cataracts, glaucoma, diabetic retinopathy, macular degeneration, and dry eye syndrome.
+                </p>
+              </div>
+
+              <!-- Care 4: Pediatric Ophthalmology -->
+              <div class="aspects-card fade-up stagger-3">
+                <div class="icon-wrapper">
+                  <i class="fas fa-child"></i>
+                </div>
+                <h3>Pediatric Ophthalmology</h3>
+                <p>
+                  We provide specialized care for children's eye health, addressing conditions like amblyopia (lazy eye) and strabismus (crossed eyes).
+                </p>
+              </div>
+
+              <!-- Care 5: Oculoplastic Surgery -->
+              <div class="aspects-card fade-up stagger-4">
+                <div class="icon-wrapper">
+                  <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Oculoplastic Surgery</h3>
+                <p>
+                  Our ophthalmologists perform a range of reconstructive and cosmetic procedures around the eyes, addressing concerns like droopy eyelids, ptosis, and eyelid tumors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: VISION PRIORITY (PREMIUM 3-COLUMN LAYOUT) -->
+      <section class="vision-priority-section section-padding bg-white">
+        <div class="container">
+          <div class="vision-priority-grid fade-up">
+            <!-- Left Column: Heading & Schedule CTA -->
+            <div class="priority-col-left">
+              <h2 class="priority-title">Your Vision is Our Priority</h2>
+              <p class="priority-text">
+                Schedule an appointment with Supreme Ophthalmology today and experience the difference of exceptional eye care. We look forward to helping you see the world clearly!
+              </p>
+              <div class="priority-cta mt-4">
+                <a href="book-an-appointment.html" class="btn btn-primary btn-glow">Book Appointment</a>
+              </div>
+            </div>
+
+            <!-- Middle Column: Premium Diagnostic Visual -->
+            <div class="priority-col-middle">
+              <div class="priority-image-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1781598495/a9129f64-5246-4e62-ac34-4d26f5718416_rbzezj.png"
+                  alt="State-of-the-art retinal diagnostics"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Right Column: Dedicated Care Statement -->
+            <div class="priority-col-right">
+              <p class="priority-desc">
+                At Supreme Ophthalmology, we believe everyone deserves access to exceptional eye care. Our team is dedicated to providing you with a personalized approach, taking the time to understand your concerns and goals for your vision.
+              </p>
+              <p class="priority-desc mt-3">
+                We will work collaboratively with you to develop a treatment plan that addresses your specific needs and preferences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- SECTION 5: EXPERTS / CONSULTANTS -->
+      <section class="consultants-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Vision Experts</h5>
+            <h2>Our Consultants</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <!-- Swiper Consultants Carousel -->
+          <div class="swiper swiper-consultants mt-5">
+            <div class="swiper-wrapper">
+              <!-- Dr. (Maj) G. Premnath -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. (Maj) G. Premnath</h4>
+                    <span class="doc-spec">MBBS, MS (Ophthalmology), Clinical Fellowship in Glaucoma</span>
+                    <ul class="doc-highlights">
+                      <li>Cataract & Glaucoma Surgery</li>
+                      <li>Comprehensive Eye Care</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        </div>
+      </section>
+
+      <!-- SECTION 6: FAQ -->
+      <section class="dept-faq-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Vision Guidance</h5>
+            <h2>Frequently Asked Questions</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <div class="faq-accordion mt-5 max-w-800 mx-auto">
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How often should I have an eye exam?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  It is recommended to have an eye exam once every 1–2 years, depending on your age, vision needs, and medical history. Children, seniors, and individuals with conditions like diabetes may need more frequent checkups to monitor vision changes and detect eye diseases early.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What are the common signs and symptoms of eye problems?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Common signs include blurry vision, eye pain, redness, light sensitivity, floaters, and sudden vision changes. Persistent headaches or difficulty focusing can also indicate underlying issues. If you experience any of these symptoms, consult an ophthalmologist promptly for a thorough evaluation.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                Can eye exercises improve my vision?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Eye exercises may help reduce eye strain and improve focus, especially for digital eye fatigue or certain muscle imbalances. However, they cannot correct refractive errors like nearsightedness or farsightedness. For long-term vision improvement, corrective lenses or medical treatment may be needed.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How can I reduce my risk of developing glaucoma?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Regular eye exams are key to early detection. Maintaining healthy blood pressure, managing diabetes, avoiding smoking, and exercising regularly can reduce glaucoma risk. Protect your eyes from injury and follow your doctor's advice if you have a family history of glaucoma.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

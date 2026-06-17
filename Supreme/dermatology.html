@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Skin & Dermatology Clinic in Padur | Supreme Hospitals</title>
+    <meta
+      name="description"
+      content="Supreme Hospitals offers expert skin & dermatology care in Padur, Thiruporur, and Navalur – for acne, rashes, pigmentation, and advanced skin cancer screening."
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body class="department-page">
+    <div id="header-placeholder"></div>
+
+    <!-- Floating CTA -->
+    <button
+      class="floating-cta ripple"
+      onclick="window.location.href = 'book-an-appointment.html'"
+    >
+      <span class="pulse-ring"></span>
+      <i class="fas fa-calendar-plus"></i>
+      <span>Book an Appointment</span>
+    </button>
+
+    <!-- Appointment Modal Form -->
+    <div class="modal-overlay" id="appointment-modal">
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Request an Appointment</h3>
+          <p>
+            Fill out the form below and our team will get back to you shortly.
+          </p>
+        </div>
+        <form class="appointment-form" onsubmit="event.preventDefault()">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="dermatology" selected>Dermatology</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="dental">Dental</option>
+              <option value="diabetology">Diabetology</option>
+              <option value="psychiatry">Psychiatry</option>
+              <option value="ent">ENT</option>
+              <option value="general-surgery">General Surgery</option>
+              <option value="gastroenterology">Medical Gastroenterology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="obstetrics-gynaecology">
+                Obstetrics & Gynaecology
+              </option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="ophthalmology">Ophthalmology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="pain-palliative-care">
+                Pain & Palliative Care
+              </option>
+              <option value="general-medicine">General Medicine</option>
+              <option value="urology">Urology</option>
+              <option value="radiology">Radiology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" required />
+          </div>
+          <div class="form-group full-width">
+            <textarea placeholder="Message / Symptoms" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width btn-glow">
+            Confirm Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO BANNER -->
+
+      <section
+        class="hero-premium"
+        style="
+          background-image: url('https://res.cloudinary.com/dr7jaclns/image/upload/v1780918317/dermatology_banner_xermww.jpg');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Department</span> <i class="fas fa-chevron-right"></i>
+              <span class="current">Dermatology</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Supreme Excellence</h5>
+            <h1>Dermatology & Skin Care</h1>
+            <p class="hero-subtitle">
+              Expert clinical care for skin, hair, and nails. Advanced
+              dermatology treatment including medical, surgical, and cosmetic
+              solutions.
+            </p>
+            <div class="hero-btns mt-5 stagger-1">
+              <a
+                href="book-an-appointment.html"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Book Appointment</a
+              >
+              <a
+                href="contact-us.html"
+                class="btn btn-outline-white btn-lg px-5 ml-md-3"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: OVERVIEW -->
+      <section class="partner-section section-padding bg-white">
+        <div class="container">
+          <div class="row align-center flex-wrap">
+            <div class="col-md-6 fade-up">
+              <h5 class="subtitle text-accent">Skin Health Excellence</h5>
+              <h2>Overview</h2>
+              <div class="title-line mb-4"></div>
+              <p class="text-muted leading-relaxed mb-5">
+                Do you struggle with persistent skin conditions like eczema, acne, or rosacea? Perhaps you’re seeking solutions for aging skin, hair loss, or unwanted growths. Look no further than Supreme Hospital Dermatology, a leading center for <strong>Dermatology Treatment</strong> in the region. Our team of board-certified dermatologists brings a wealth of experience and knowledge to diagnose and treat a wide range of skin, hair, and nail concerns. We utilize the latest advancements in <strong>Dermatology Treatment</strong> to provide you with personalized care plans, ensuring optimal results. Whether you require advanced surgical procedures or effective medical therapies, Supreme Hospital Dermatology is dedicated to restoring your skin’s health and enhancing your natural beauty.
+              </p>
+            </div>
+            <div class="col-md-6 fade-up stagger-1 mt-sm-5 d-flex justify-content-center">
+              <div class="dept-img-placeholder box-shadow" style="width: 100%; max-width: 85%; margin: 0 auto; min-height: auto !important;">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1781601293/fab35656-4018-4744-8477-5e7c73109c1b_ttrzhd.png"
+                  alt="Supreme Dermatology Care"
+                  class="img-fluid rounded-30"
+                  style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: KEY TREATMENTS (AUTO SCROLL) -->
+      <section class="treatments-scroll-section section-padding bg-soft-blue">
+        <div class="container-fluid p-0">
+          <div class="section-title text-center mb-5 fade-up">
+            <h5 class="subtitle text-accent">Clinical Conditions</h5>
+            <h2>Areas of Expertise</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+
+          <div class="scroller-container mt-5">
+            <div class="scroller-inner">
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Acne & Rashes</h3>
+                  <p class="text-sm text-muted">
+                    Management of clogged follicles, blackheads, and whiteheads
+                    with topical and oral medical care.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Psoriasis & Autoimmune</h3>
+                  <p class="text-sm text-muted">
+                    Addressing thick, red patches using advanced creams, light
+                    therapy, and systemic medications.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Alopecia & Hair Loss</h3>
+                  <p class="text-sm text-muted">
+                    Diagnosing underlying causes and providing transplantation
+                    or medical hair restoration options.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Nail Fungus</h3>
+                  <p class="text-sm text-muted">
+                    Clinical antifungal treatments to address thickened,
+                    discolored nails for health and aesthetic.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Skin Cancer Care</h3>
+                  <p class="text-sm text-muted">
+                    Crucial screenings and surgical removal for Melanomatic,
+                    BCC, and SCC malignant tumors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: COSMETIC & TECHNOLOGY (UNIQUE SOURCE SECTION) -->
+      <section class="cosmetic-section section-padding bg-white">
+        <div class="container">
+          <div class="row align-center">
+            <div class="col-md-6 order-md-2 fade-up">
+              <h5 class="subtitle text-accent">Aesthetic Excellence</h5>
+              <h2>Cosmetic Dermatology</h2>
+              <div class="title-line mb-4"></div>
+              <p class="text-muted leading-relaxed mb-4">
+                From advanced topical therapies to minimally invasive cosmetic
+                procedures, we personalize every skincare plan. Our expert
+                dermatologists offer holistic solutions for acne scars,
+                hyperpigmentation, and fine lines.
+              </p>
+              <ul class="check-list-modern mb-4">
+                <li>
+                  <i class="fas fa-certificate text-accent mr-2"></i> Botox &
+                  Dermal Fillers for fine lines
+                </li>
+                <li>
+                  <i class="fas fa-certificate text-accent mr-2"></i> Chemical
+                  Peels for skin rejuvenation
+                </li>
+                <li>
+                  <i class="fas fa-certificate text-accent mr-2"></i> Laser
+                  Therapy for hair and tattoo removal
+                </li>
+                <li>
+                  <i class="fas fa-certificate text-accent mr-2"></i>
+                  Microneedling for skin texture improvement
+                </li>
+              </ul>
+              <div class="highlight-box bg-soft p-4 border-left-accent">
+                <p class="text-sm mb-0 italic">
+                  "Detected and treated early, skin cancer has excellent
+                  outcomes. Our dermatologists play a crucial role in lifesaving
+                  screenings."
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 order-md-1 fade-up stagger-1 mt-sm-5 d-flex justify-content-center">
+              <div class="dept-img-placeholder box-shadow" style="width: 100%; max-width: 85%; margin: 0 auto; min-height: auto !important;">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1781601414/074f8dfc-215c-42e5-8f9c-79ebec967b6c_icld1r.png"
+                  alt="Laser Rejuvenation System"
+                  class="img-fluid rounded-30"
+                  style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+            <!-- SECTION 6: EXPERTS / CONSULTANTS -->
+      <section class="consultants-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Skincare Leadership</h5>
+            <h2>Medical Specialists</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <!-- Swiper Consultants Carousel -->
+          <div class="swiper swiper-consultants mt-5">
+            <div class="swiper-wrapper">
+              <!-- Dr. R. Gokul -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. R. Gokul</h4>
+                    <span class="doc-spec">MBBS, MD (DVL), DNB (DVL)</span>
+                    <ul class="doc-highlights">
+                      <li>Skin & Hair Treatment Specialist</li>
+                      <li>Advanced Laser & Cosmetology</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Dr. Yuwarani. M -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Yuwarani. M</h4>
+                    <span class="doc-spec">MBBS, MD Dermatology, Venereology & Leprosy</span>
+                    <ul class="doc-highlights">
+                      <li>Skin & Hair Treatment</li>
+                      <li>Advanced Laser Therapies</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        </div>
+      </section>
+
+      <!-- SECTION 7: FAQ -->
+      <section class="dept-faq-section section-padding bg-white">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Skin Guidance</h5>
+            <h2>Frequently Asked Questions</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <div class="faq-accordion mt-5 max-w-800 mx-auto">
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What conditions do dermatologists treat?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Dermatologists treat skin, hair, and nail conditions such as acne, eczema, psoriasis, fungal infections, skin allergies, and skin cancer. They also manage cosmetic concerns like pigmentation, wrinkles, and scars. Early consultation helps in effective diagnosis and treatment of both medical and cosmetic dermatological issues.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What treatments are available for acne scars?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Treatments for acne scars include chemical peels, microneedling, laser therapy, dermal fillers, and subcision. The best option depends on scar type and skin condition. A dermatologist can assess your skin and recommend a personalized treatment plan to improve texture and appearance over time.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                Are cosmetic dermatology procedures safe?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Yes, cosmetic dermatology procedures are generally safe when performed by qualified professionals. Treatments like Botox, fillers, and laser therapy are FDA-approved and carry minimal risks. It's important to consult a certified dermatologist to ensure procedures are suitable for your skin type and medical history.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                When should I consult a dermatologist about hair loss?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Consult a dermatologist if you notice sudden, excessive, or patchy hair loss, thinning, or scalp irritation. Early diagnosis can help identify the underlying cause—whether hormonal, nutritional, or medical—and allow timely treatment to prevent further hair loss and promote regrowth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

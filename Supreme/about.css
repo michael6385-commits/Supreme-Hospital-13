@@ -1,0 +1,684 @@
+/* ================= ABOUT US PAGE STYLES ================= */
+
+/* Page base */
+.about-page main {
+    background: #f7f9fc;
+}
+
+/* About Page Hero Background Image */
+.about-page .hero-about {
+    background-image: url('images/about-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Optional: Make the image more visible (lighter overlay than the global hero) */
+.about-page .hero-about .hero-overlay {
+    background: linear-gradient(
+        90deg,
+        rgba(6, 17, 33, 0.88) 0%,
+        rgba(6, 17, 33, 0.55) 55%,
+        rgba(6, 17, 33, 0.25) 100%
+    );
+}
+
+/* Hero text width for a cleaner composition */
+.about-page .hero-about .fade-up {
+    max-width: 760px;
+}
+
+/* ================= ABOUT US INTRO (MATCH SCREENSHOT STYLE) ================= */
+.about-page .about-section {
+    background: transparent; /* let main background show through */
+}
+
+.about-page .about-content h2 {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.about-page .about-lead {
+    font-size: 1.12rem;
+    line-height: 1.8;
+    color: #2b3440;
+}
+
+.about-page .about-content p {
+    color: #4a5568;
+}
+
+.about-page .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.about-page .about-stat {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    border-radius: 16px;
+    padding: 16px 16px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.04);
+}
+
+.about-page .about-stat .stat-number {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    line-height: 1.1;
+}
+
+.about-page .about-stat .stat-label {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.about-page .about-image-wrapper.about-intro-image {
+    position: relative;
+    max-width: 520px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+/* Remove the blue background shape behind the circle image */
+.about-page .about-image-wrapper.about-intro-image::before {
+    content: none;
+}
+
+/* Circle image as BACKGROUND (as requested) */
+.about-page .about-image-wrapper.about-intro-image .about-intro-bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+    background-image: url('https://res.cloudinary.com/dr7jaclns/image/upload/v1780919279/supreme-aboutus.png_sc9rxz.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 10px solid rgba(255, 255, 255, 0.9);
+}
+
+/* ================= HIGHLIGHTS SECTION (CIRCLE IMAGE + BULLETS) ================= */
+.about-page .about-highlights {
+    background: transparent;
+}
+
+.about-highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.highlights-image-wrapper {
+    max-width: 520px;
+    width: 100%;
+}
+
+.highlights-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.highlights-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    border-radius: 22px;
+    padding: 32px 30px;
+    box-shadow: 0 18px 55px rgba(2, 6, 23, 0.06);
+}
+
+.highlights-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+.highlights-subtitle {
+    margin: 0 0 18px 0;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.highlights-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.highlights-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 1.02rem;
+    line-height: 1.75;
+    color: #334155;
+    margin-bottom: 16px;
+}
+
+.highlights-list li i {
+    color: var(--primary-blue);
+    margin-top: 5px;
+    flex: 0 0 auto;
+}
+
+.highlights-list li span {
+    display: inline-block;
+}
+
+@media (max-width: 992px) {
+    .about-highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-page .about-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= FACILITIES (ICON GRID) ================= */
+.about-page .facilities-section {
+    background: transparent;
+}
+
+.about-page .facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    align-items: start;
+}
+
+.about-page .facility-item {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 14px 40px rgba(2, 6, 23, 0.06);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease,
+        background 220ms ease;
+}
+
+.about-page .facility-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+            1200px 300px at 10% 0%,
+            rgba(0, 84, 169, 0.08),
+            transparent 50%
+        ),
+        radial-gradient(
+            900px 260px at 100% 100%,
+            rgba(0, 84, 169, 0.06),
+            transparent 55%
+        );
+    opacity: 0;
+    transition: opacity 220ms ease;
+    pointer-events: none;
+}
+
+.about-page .facility-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 55px rgba(2, 6, 23, 0.10);
+    border-color: rgba(0, 84, 169, 0.22);
+    background: rgba(255, 255, 255, 0.94);
+}
+
+.about-page .facility-item:hover::before {
+    opacity: 1;
+}
+
+.about-page .facility-media {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #eaf1fb;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    position: relative;
+    z-index: 1;
+}
+
+.about-page .facility-media::after {
+    /* subtle top-to-bottom gradient for better polish */
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(2, 6, 23, 0.05) 0%,
+        rgba(2, 6, 23, 0.00) 55%,
+        rgba(2, 6, 23, 0.06) 100%
+    );
+    pointer-events: none;
+}
+
+.about-page .facility-photo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1.02);
+    transition: transform 260ms ease;
+}
+
+.about-page .facility-item:hover .facility-photo {
+    transform: scale(1.06);
+}
+
+.about-page .facility-content {
+    padding: 18px 18px 20px 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-page .facility-title {
+    margin: 0 0 8px 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.08rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: #0f172a;
+}
+
+.about-page .facility-desc {
+    margin: 0;
+    max-width: 100%;
+    color: #475569;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 992px) {
+    .about-page .facilities-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .about-page .facility-desc {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .about-page .facility-content {
+        padding: 16px 14px 18px 14px;
+    }
+}
+
+/* Inner Banner */
+.inner-banner {
+    position: relative;
+    padding: 150px 0 100px;
+    background: linear-gradient(135deg, var(--dark-black), var(--primary-blue));
+    color: white;
+    overflow: hidden;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(70, 127, 247, 0.4), transparent);
+    z-index: 1;
+}
+
+.inner-banner .breadcrumb {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.inner-banner .breadcrumb a {
+    color: rgba(255,255,255,0.7);
+}
+
+.inner-banner .breadcrumb a:hover {
+    color: var(--orange);
+}
+
+.inner-banner .breadcrumb span {
+    margin: 0 10px;
+    color: rgba(255,255,255,0.5);
+}
+
+.inner-banner .breadcrumb .current {
+    color: var(--white);
+}
+
+/* About Section */
+.about-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.img-grid > img {
+    border-radius: 20px;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.about-img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Mission & Vision Section */
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+@media (max-width: 900px) {
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mv-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 4px 12px rgba(10, 37, 64, 0.03);
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mv-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    transition: all 0.3s ease;
+}
+
+.mv-card.mission-card::before {
+    background: var(--primary-blue);
+}
+
+.mv-card.vision-card::before {
+    background: var(--orange);
+}
+
+.mv-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(10, 37, 64, 0.06);
+    background: #ffffff;
+    border-color: #e2e8f0;
+}
+
+.mv-card.mission-card:hover {
+    border-color: rgba(0, 102, 204, 0.2);
+}
+
+.mv-card.vision-card:hover {
+    border-color: rgba(230, 92, 0, 0.2);
+}
+
+/* Override center align for about page icon boxes */
+.mv-card .icon-box-circle {
+    margin: 0 0 25px 0; /* Left-aligned */
+    width: 64px;
+    height: 64px;
+    border-radius: 16px; /* Squircle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: var(--transition-smooth);
+}
+
+.mv-card.mission-card .icon-box-circle {
+    background: rgba(0, 102, 204, 0.06);
+    color: var(--primary-blue);
+    box-shadow: none;
+}
+
+.mv-card.vision-card .icon-box-circle {
+    background: rgba(230, 92, 0, 0.06);
+    color: var(--orange);
+    box-shadow: none;
+}
+
+.mv-card:hover .icon-box-circle {
+    transform: translateY(-2px);
+}
+
+.mv-card.mission-card:hover .icon-box-circle {
+    background: var(--primary-blue);
+    color: white;
+}
+
+.mv-card.vision-card:hover .icon-box-circle {
+    background: var(--orange);
+    color: white;
+}
+
+.mv-card h3 {
+    font-size: 1.75rem;
+    color: var(--dark-black);
+    margin-bottom: 15px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.mv-card p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Our Facilities Section */
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+@media (max-width: 992px) {
+    .facilities-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 576px) {
+    .facilities-grid { grid-template-columns: 1fr; }
+}
+
+.facility-panel {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    border: 1px solid rgba(0,0,0,0.02);
+    transition: 0.4s ease;
+}
+
+.facility-panel:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    background: linear-gradient(to bottom right, #ffffff, #fdfdfd);
+}
+
+.facility-panel .icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    background: var(--primary-blue);
+    box-shadow: 0 8px 15px rgba(0, 84, 169, 0.3);
+}
+
+.facility-panel .bg-red { background: var(--medical-red); box-shadow: 0 8px 15px rgba(205, 32, 31, 0.3); }
+.facility-panel .bg-blue { background: var(--secondary-blue); box-shadow: 0 8px 15px rgba(4, 107, 210, 0.3); }
+.facility-panel .bg-cyan { background: var(--bright-blue); box-shadow: 0 8px 15px rgba(70, 127, 247, 0.3); }
+.facility-panel .bg-orange { background: var(--orange); box-shadow: 0 8px 15px rgba(238, 124, 27, 0.3); }
+.facility-panel .bg-pink { background: var(--pink-accent); box-shadow: 0 8px 15px rgba(255, 0, 94, 0.3); }
+
+.facility-info h4 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.facility-info p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Hospital Highlight Block */
+.hospital-highlight-block {
+    margin: -50px 0 100px;
+    position: relative;
+    z-index: 10;
+}
+
+.highlight-strip {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.strip-left {
+    flex: 1.5;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.strip-left h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.strip-left p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.strip-right {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid rgba(0,0,0,0.05);
+}
+
+.strip-right .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.strip-right .contact-item h5 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--dark-black);
+}
+
+.strip-right a {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+}
+
+.strip-right a:hover {
+    color: var(--orange);
+}
+
+@media (max-width: 992px) {
+    .highlight-strip {
+        flex-direction: column;
+    }
+    .strip-right {
+        border-left: none;
+        border-top: 1px solid rgba(0,0,0,0.05);
+    }
+}
+
+/* Professional font alignment */
+.about-page,
+.about-page *,
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.about-page h4,
+.about-page h5,
+.about-page h6 {
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif !important;
+    letter-spacing: 0 !important;
+}
+
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.about-page h4,
+.about-page h5,
+.about-page h6 {
+    font-family: "Outfit", "Inter", "Segoe UI", sans-serif !important;
+}
+
+/* Keep About page icons rendered through Font Awesome. */
+.about-page .fa,
+.about-page .fas,
+.about-page .far,
+.about-page .fab,
+.about-page .fa-solid,
+.about-page .fa-regular,
+.about-page .fa-brands {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+.about-page .fab,
+.about-page .fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+.about-page .fas,
+.about-page .fa-solid {
+    font-weight: 900 !important;
+}
+
+.about-page .far,
+.about-page .fa-regular {
+    font-weight: 400 !important;
+}

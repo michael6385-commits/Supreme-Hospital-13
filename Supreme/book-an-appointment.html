@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Book an Appointment | Supreme Speciality Hospital | Best Hospital in Padur
+    </title>
+    <meta
+      name="description"
+      content="Request an appointment at Supreme Speciality Hospital. High-end clinical care and medical excellence across multiple specialities."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body class="appointment-page">
+    <div id="header-placeholder"></div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO (Screenshot Style) -->
+      <section
+        class="hero-premium"
+        style="
+          background-image: url('https://res.cloudinary.com/dr7jaclns/image/upload/v1780918304/appointment_bg_h2p6p2.jpg');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Appointment</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Healthcare Excellence</h5>
+            <h1>Book an <br />Appointment</h1>
+            <p class="hero-subtitle">
+              Supreme Speciality Hospital, located in Padur, stands as a
+              prominent healthcare facility. Our dedication ensures a positive
+              and comfortable healthcare journey for you.
+            </p>
+            <div class="hero-btns stagger-1">
+              <a
+                href="#appointment-form"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Fill Form Below</a
+              >
+              <a
+                href="tel:04467453535"
+                class="btn btn-outline-white btn-lg px-5"
+                style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;"
+                ><i class="fas fa-phone-alt" style="transform: translateY(1px);"></i> <span>044 67453535</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: APPOINTMENT CONTENT & FORM -->
+      <section id="appointment-form" class="appointment-page-section">
+        <div class="container">
+          <div class="appointment-form-card fade-up">
+            <div class="form-header-premium">
+              <h2>Request Appointment</h2>
+              <p class="text-muted">
+                High-end clinical care is just a request away. Fill the details
+                below and our team will contact you shortly.
+              </p>
+            </div>
+
+            <form
+              class="actual-appointment-form"
+              onsubmit="
+                event.preventDefault();
+                alert(
+                  'Appointment Request Submitted Successfully! Our team will call you back.',
+                );
+              "
+            >
+              <div class="form-grid-2">
+                <!-- Name -->
+                <div class="form-group-premium">
+                  <label>Full Name*</label>
+                  <input
+                    type="text"
+                    placeholder="Enter your full name"
+                    required
+                    class="form-control-premium"
+                  />
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group-premium">
+                  <label>Phone Number*</label>
+                  <input
+                    type="tel"
+                    placeholder="Enter mobile number"
+                    required
+                    class="form-control-premium"
+                  />
+                </div>
+
+                <!-- Email -->
+                <div class="form-group-premium">
+                  <label>Email ID*</label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                    class="form-control-premium"
+                  />
+                </div>
+
+                <!-- Department -->
+                <div class="form-group-premium">
+                  <label>Select Department*</label>
+                  <select
+                    id="dept-select"
+                    required
+                    class="form-control-premium pt-3"
+                  >
+                    <option value="" disabled selected>
+                      Select Department
+                    </option>
+                    <option value="ANAESTHESIOLOGY">ANAESTHESIOLOGY</option>
+                    <option value="CARDIOLOGY">CARDIOLOGY</option>
+                    <option value="ENT">ENT</option>
+                    <option value="GENERAL SURGERY">GENERAL SURGERY</option>
+                    <option value="GENERAL MEDICINE">GENERAL MEDICINE</option>
+                    <option value="DIABETOLOGY">DIABETOLOGY</option>
+                    <option value="INTERVENTIONAL PULMONOLOGY">
+                      INTERVENTIONAL PULMONOLOGY
+                    </option>
+                    <option value="LABORATORY">LABORATORY</option>
+                    <option value="NEPHROLOGY">NEPHROLOGY</option>
+                    <option value="NEUROLOGY">NEUROLOGY</option>
+                    <option value="OBSTETRICS & GYNECOLOGY">
+                      OBSTETRICS & GYNECOLOGY
+                    </option>
+                    <option value="ONCOLOGY">ONCOLOGY</option>
+                    <option value="OPHTHALMOLOGY">OPHTHALMOLOGY</option>
+                    <option value="ORAL MAXILLO FASCIAL SURGERY">
+                      ORAL MAXILLO FASCIAL SURGERY
+                    </option>
+                    <option value="ORTHOPEDICS">ORTHOPEDICS</option>
+                    <option value="PATHOLOGY">PATHOLOGY</option>
+                    <option value="PEDIATRICS">PEDIATRICS</option>
+                    <option value="UROLOGY">UROLOGY</option>
+                  </select>
+                </div>
+
+                <!-- Doctor -->
+                <div class="form-group-premium">
+                  <label>Select Doctor*</label>
+                  <select
+                    id="doctor-select"
+                    required
+                    class="form-control-premium pt-3"
+                  >
+                    <option value="" disabled selected>
+                      Select Department First
+                    </option>
+                  </select>
+                </div>
+
+                <!-- Date (Optional but good practice) -->
+                <div class="form-group-premium">
+                  <label>Preferred Date</label>
+                  <input type="date" class="form-control-premium" />
+                </div>
+
+                <!-- Message -->
+                <div class="form-group-premium form-full-width">
+                  <label>Message / Symptoms*</label>
+                  <textarea
+                    rows="5"
+                    placeholder="Tell us about your concern..."
+                    required
+                    class="form-control-premium"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="text-center mt-4">
+                <button
+                  type="submit"
+                  class="btn btn-primary submit-btn-premium btn-glow"
+                >
+                  Submit Appointment Request
+                  <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: QUICK CONTACT INFO -->
+      <section class="section-padding bg-white">
+        <div class="container">
+          <div class="grid-3">
+            <div class="fade-up">
+              <div class="contact-mini-card glass-card">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <h4>Call Us</h4>
+                <a href="tel:04467453535" class="contact-link">044 67453535</a>
+                <a href="tel:+919940010007" class="contact-link">+91 99400 10007</a>
+              </div>
+            </div>
+            <div class="fade-up stagger-1">
+              <div class="contact-mini-card glass-card">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h4>Email Us</h4>
+                <a href="mailto:contact@supremehospitals.in" class="contact-link">contact@supremehospitals.in</a>
+                <a href="mailto:info@supremehospitals.in" class="contact-link">info@supremehospitals.in</a>
+              </div>
+            </div>
+            <div class="fade-up stagger-2">
+              <div class="contact-mini-card glass-card">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h4>Location</h4>
+                <a href="https://www.google.com/maps/dir/13.0843007,80.2704622/supreme+hospital+map" target="_blank" class="contact-link">Padur, OMR, Chennai</a>
+                <span class="contact-text">Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Dependency Logic for Doctor Dropdown -->
+    <script>
+      const doctorData = {
+        ANAESTHESIOLOGY: [
+          "Dr. G. Dilip Kumar",
+          "Dr. Karthikeyan",
+          "Dr. R. Adhilakshmi",
+        ],
+        CARDIOLOGY: ["Dr. K. Anand Manjunath", "Dr. Arun Arockia Rajesh. J"],
+        ENT: ["Dr. K. Priya", "Dr. Puja Ghosh"],
+        "GENERAL SURGERY": ["Dr. Felix Anand Raj", "Dr. S. Mathan Sankar"],
+        "GENERAL MEDICINE": [
+          "Dr. Bravian Samvict Devadas",
+        ],
+        DIABETOLOGY: ["Dr. R. Arun Kumar"],
+        "INTERVENTIONAL PULMONOLOGY": ["Dr. S. Suresh Sagadevan"],
+        LABORATORY: ["Dr. Chandana Adayalam"],
+        NEPHROLOGY: ["Dr. P. Muthukumar"],
+        NEUROLOGY: ["Dr. N. Praveen Chander"],
+        "OBSTETRICS & GYNECOLOGY": [
+          "Dr. K. Rini Ezhil",
+          "Dr. Shery Angel Rajkumar",
+          "Dr. Sharmila Ganesan",
+        ],
+        ONCOLOGY: [
+          "Dr. X. Gerald Anand Raj",
+          "Dr. Sivakumar Ganesan",
+          "Dr. Vijay Guru",
+        ],
+        OPHTHALMOLOGY: ["Dr. (Maj) G. Premnath"],
+        "ORAL MAXILLO FASCIAL SURGERY": ["Dr. Jessica Yolanda Jeevitha"],
+        ORTHOPEDICS: [
+          "Dr. F. Abdul Khader",
+          "Dr. Thirumal",
+        ],
+        PATHOLOGY: ["Dr. Lavanya"],
+        PEDIATRICS: ["Dr. Archana Kulasekaran", "Dr. Rajkumar"],
+        UROLOGY: [
+          "Dr. Joseph Wilfred Amrit",
+          "Dr. Somnatha Sharma",
+        ],
+      };
+
+      document
+        .getElementById("dept-select")
+        .addEventListener("change", function () {
+          const dept = this.value;
+          const docSelect = document.getElementById("doctor-select");
+          docSelect.innerHTML =
+            '<option value="" disabled selected>Select Doctor</option>';
+
+          if (doctorData[dept]) {
+            doctorData[dept].forEach((doc) => {
+              const opt = document.createElement("option");
+              opt.value = doc;
+              opt.textContent = doc;
+              docSelect.appendChild(opt);
+            });
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+.main-footer { 
+    background: #061225; /* Premium deep dark blue */
+    color: rgba(255, 255, 255, 0.7); 
+    padding-top: 80px; 
+    padding-bottom: 60px; 
+}
+.grid-4 { 
+    display: grid; 
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr; 
+    gap: 40px; 
+    position: relative;
+}
+.footer-logo { 
+    max-width: 220px; 
+    padding: 12px; 
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.footer-desc {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-col {
+    padding: 0 10px;
+}
+
+/* Removing the dated vertical dividers */
+.has-divider {
+    border-right: none;
+}
+
+.footer-col h4 { 
+    color: #ffffff; 
+    font-size: 1.25rem; 
+    margin-bottom: 30px; 
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: #0075c2;
+    border-radius: 2px;
+}
+
+.footer-col ul { list-style: none; padding: 0; margin: 0; }
+.footer-col ul li { margin-bottom: 18px; display: flex; gap: 15px; align-items: flex-start; }
+.footer-col ul li i { margin-top: 5px; color: #0075c2; font-size: 16px; }
+.footer-col ul li span, .footer-col ul li a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    line-height: 1.6;
+}
+
+.links-list li a {
+    text-decoration: none;
+    display: inline-block;
+}
+.links-list li a:hover {
+    color: #ffffff;
+    transform: translateX(8px);
+}
+.contact-list li a:hover {
+    color: #ffffff;
+}
+
+.social-links-new {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.social-icon.fb:hover { background-color: #3b5998; border-color: #3b5998; }
+.social-icon.x:hover { background-color: #000000; border-color: #000000; }
+.social-icon.ig:hover { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-color: transparent;}
+.social-icon.yt:hover { background-color: #ff0000; border-color: #ff0000; }
+
+.chatbot-wrapper {
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+}
+
+.chatbot-img {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+}
+
+.chatbot-img:hover {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+@media (max-width: 1024px) {
+    .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 50px;}
+}
+
+@media (max-width: 768px) {
+    .grid-4 { grid-template-columns: 1fr; gap: 40px;}
+    .chatbot-wrapper { position: relative; bottom: 0; right: 0; text-align: left; margin-top: 30px;}
+}
+
+/* Patient-facing minimal footer polish */
+.main-footer {
+    background: #102a43;
+    padding-top: 72px;
+    padding-bottom: 56px;
+}
+
+.footer-logo {
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+}
+
+.footer-col h4::after {
+    width: 34px;
+    height: 2px;
+    background: #73a9c8;
+}
+
+.footer-col ul li i,
+.footer-col ul li a:hover,
+.contact-list li a:hover {
+    color: #9bd0ea;
+}
+
+.links-list li a {
+    transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.links-list li a:hover {
+    transform: translateX(4px);
+}
+
+.social-icon {
+    border-radius: 10px;
+    transition: background-color 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.chatbot-img {
+    transition: transform 0.22s ease;
+}
+
+.chatbot-img:hover {
+    transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .links-list li a,
+    .social-icon,
+    .chatbot-img {
+        transition-duration: 0.001ms !important;
+    }
+}

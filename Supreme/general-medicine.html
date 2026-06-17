@@ -1,0 +1,353 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Best General Physician in Padur & Thiruporur | Supreme Hospitals
+    </title>
+    <meta
+      name="description"
+      content="Get trusted general medicine care at Supreme Hospitals – expert physicians serving Padur, Thiruporur, Navalur & Kelambakkam for all age groups."
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body class="department-page">
+    <div id="header-placeholder"></div>
+
+    <!-- Floating CTA -->
+    <button
+      class="floating-cta ripple"
+      onclick="window.location.href = 'book-an-appointment.html'"
+    >
+      <span class="pulse-ring"></span>
+      <i class="fas fa-calendar-plus"></i>
+      <span>Book an Appointment</span>
+    </button>
+
+    <!-- Appointment Modal Form -->
+    <div class="modal-overlay" id="appointment-modal">
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Request an Appointment</h3>
+          <p>
+            Fill out the form below and our team will get back to you shortly.
+          </p>
+        </div>
+        <form class="appointment-form" onsubmit="event.preventDefault()">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="general-medicine" selected>
+                General Medicine
+              </option>
+              <option value="cardiology">Cardiology</option>
+              <option value="dental">Dental</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="diabetology">Diabetology</option>
+              <option value="psychiatry">Psychiatry</option>
+              <option value="ent">ENT</option>
+              <option value="general-surgery">General Surgery</option>
+              <option value="gastroenterology">Medical Gastroenterology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="obstetrics-gynaecology">
+                Obstetrics & Gynaecology
+              </option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="ophthalmology">Ophthalmology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="pain-palliative-care">
+                Pain & Palliative Care
+              </option>
+              <option value="urology">Urology</option>
+              <option value="radiology">Radiology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" required />
+          </div>
+          <div class="form-group full-width">
+            <textarea placeholder="Message / Symptoms" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width btn-glow">
+            Confirm Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO BANNER -->
+
+      <section
+        class="hero-premium"
+        style="
+          background-image: url('https://res.cloudinary.com/dr7jaclns/image/upload/general_medicine_banner_lhuy9y');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Department</span> <i class="fas fa-chevron-right"></i>
+              <span class="current">General Medicine</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Supreme Excellence</h5>
+            <h1>Internal & General Medicine</h1>
+            <p class="hero-subtitle">
+              Trust the experts for your primary healthcare needs, from routine
+              check-ups to managing complex systemic conditions.
+            </p>
+            <div class="hero-btns mt-5 stagger-1">
+              <a
+                href="book-an-appointment.html"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Book Appointment</a
+              >
+              <a
+                href="contact-us.html"
+                class="btn btn-outline-white btn-lg px-5 ml-md-3"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: PATIENT-CENTERED APPROACH -->
+      <section class="partner-section section-padding bg-white">
+        <div class="container">
+          <div class="row align-center flex-wrap">
+            <div class="col-md-6 fade-up">
+              <h5 class="subtitle text-accent">Excellence in Internal Medicine</h5>
+              <h2>Overview</h2>
+              <div class="title-line mb-4"></div>
+              <p class="text-muted leading-relaxed mb-5">
+                Supreme Hospital's General Medicine Department provides comprehensive internal medicine care for a wide spectrum of adult health concerns, ranging from common illnesses like fever, bacterial and viral infections, and high blood pressure to more complex chronic conditions such as diabetes, thyroid disorders, and respiratory diseases. Our skilled general physicians and primary care specialists focus on accurate diagnosis, customized treatment plans, and preventive healthcare. With a patient-centered approach and access to state-of-the-art diagnostic technology, we ensure timely, effective, and coordinated medical care for patients of all ages.
+              </p>
+            </div>
+            <div class="col-md-6 fade-up stagger-1 mt-sm-5 text-center">
+              <img
+                src="https://media.istockphoto.com/id/530284279/photo/checking-blood-pressure.jpg?s=612x612&w=0&k=20&c=KJdCdv6vs7tva5BXefiF6MfKn2JHwo9iO25_h2CbqI8="
+                alt="Checking blood pressure at Supreme Hospitals"
+                style="width:100%; border-radius:16px; box-shadow:0 8px 40px rgba(4,107,210,0.13); object-fit:cover; display:block;"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: HOLISTIC TREATMENT (AUTO SCROLL) -->
+      <section class="treatments-scroll-section section-padding bg-soft-blue">
+        <div class="container-fluid p-0">
+          <div class="section-title text-center mb-5 fade-up">
+            <h5 class="subtitle text-accent">Total Well-being</h5>
+            <h2>Our Holistic Treatment Approaches</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+
+          <div class="scroller-container mt-5">
+            <div class="scroller-inner">
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Primary Care</h3>
+                  <p class="text-sm text-muted">
+                    Your first point of contact for medical concerns, check-ups,
+                    and chronic management.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Diagnostic Expertise</h3>
+                  <p class="text-sm text-muted">
+                    State-of-the-art facilities enabling accurate and timely
+                    assessments for effective treatment.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Internal Medicine</h3>
+                  <p class="text-sm text-muted">
+                    Specializing in diagnosing and managing complex medical
+                    conditions with tailored plans.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>In/Outpatient Care</h3>
+                  <p class="text-sm text-muted">
+                    Comprehensive medical services extended across all levels of
+                    care and hospitalization.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Holistic Wellness</h3>
+                  <p class="text-sm text-muted">
+                    Emphasis on lifestyle changes, preventive measures, and
+                    maintaining a healthy life.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+            <!-- SECTION 5: EXPERTS / CONSULTANTS -->
+      <section class="consultants-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Expert Guidance</h5>
+            <h2>Our Internal Physicians</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <!-- Swiper Consultants Carousel -->
+          <div class="swiper swiper-consultants mt-5">
+            <div class="swiper-wrapper">
+              <!-- Dr. Aaron Edwin -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Aaron Edwin</h4>
+                    <span class="doc-spec">MBBS, MD (General Medicine)</span>
+                    <ul class="doc-highlights">
+                      <li>Chronic Condition Diagnosis</li>
+                      <li>Lifestyle Guidance & Health Checks</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Dr. Bravian Samvict Devadas -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Bravian Samvict Devadas</h4>
+                    <span class="doc-spec">Senior Consultant - General Medicine</span>
+                    <ul class="doc-highlights">
+                      <li>Chronic Condition Diagnosis</li>
+                      <li>Lifestyle Guidance & Health Checks</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        </div>
+      </section>
+
+      <!-- SECTION 6: FAQ -->
+      <section class="dept-faq-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Health Queries</h5>
+            <h2>Frequently Asked Questions</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <div class="faq-accordion mt-5 max-w-800 mx-auto">
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                When should I consider seeing a general physician?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  You should consult a general physician for routine health check-ups, persistent symptoms like prolonged fever or unexplained pain, management of chronic conditions, or when experiencing unusual health changes. They provide comprehensive care and can refer you to specialists if necessary.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What is the role of a general physician in managing chronic diseases?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  General physicians play a crucial role in managing chronic diseases by providing continuous care, monitoring health status, adjusting treatments, and coordinating with specialists. They educate patients on lifestyle modifications and ensure adherence to treatment plans to prevent complications.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How do I choose the right general physician for me?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Look for a physician with good experience, patient-friendly communication, and accessibility. Check their qualifications, reputation, and how comfortable you feel during the consultation. It’s important to choose someone who listens, explains clearly, and understands your medical history.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How do I prepare for my first visit to a general physician?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Bring a list of your symptoms, past medical history, medications, and any previous test results. Be ready to discuss your lifestyle, habits, and concerns honestly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

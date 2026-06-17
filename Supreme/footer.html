@@ -1,0 +1,149 @@
+<!-- Urgent Emergency Block -->
+<section id="emergency-banner" class="emergency-banner">
+  <div class="container d-flex wrap-sm justify-between align-center">
+    <div class="emergency-info">
+      <div class="flex-align">
+        <i class="fas fa-phone-volume fa-2x text-white pulse-fast"></i>
+        <div>
+          <h2 class="text-white m-0" style="font-family: 'Outfit', sans-serif; font-weight: 800;">24 HOUR EMERGENCY</h2>
+          <p class="text-white m-0 opacity-80">
+            Immediate medical attention just a call away.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="emergency-action mt-sm-3">
+      <a
+        href="tel:04467453535"
+        class="btn btn-white btn-lg btn-glow-white"
+        style="border-radius: 50px; font-weight: 800; font-family: 'Outfit', sans-serif;"
+        ><i class="fas fa-phone-alt" style="margin-right: 8px;"></i> 044 67453535</a
+      >
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-top grid-4">
+      <div class="footer-col brand-col has-divider">
+        <a href="index.html">
+          <img
+            src="https://supremehospitals.in/wp-content/uploads/2025/07/cropped-Supreme-square-white-1.jpg.webp"
+            alt="Supreme Logo"
+            class="footer-logo mb-3 bg-white-rounded"
+          />
+        </a>
+        <p class="footer-desc">
+          Supreme Speciality Hospital, located in Padur, stands as a prominent healthcare facility with 50 beds. Our dedication ensures a positive and comfortable healthcare journey for you.
+        </p>
+      </div>
+      <div class="footer-col location-col has-divider">
+        <h4>Location</h4>
+        <ul class="location-list">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>No. 1/56, Old Mahabalipuram Road, Padur, Chennai 603103.</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>No.85, Mellandai Street, Old Mahabalipuram Rd, Thiruporur, Tamil Nadu- 603 110.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col quick-links-col has-divider">
+        <h4>Quick Links</h4>
+        <ul class="links-list">
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="book-an-appointment.html">Book an Appointment</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact-col">
+        <h4>Contact Us</h4>
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:04467453535">044 67453535</a>
+          </li>
+          <li>
+            <i class="far fa-envelope"></i>
+            <span>contact@supremehospitals.in</span>
+          </li>
+        </ul>
+        <div class="social-links-new mt-4">
+          <a href="https://www.facebook.com/SupremeHospitals" class="social-icon fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/omr_supremehosp" class="social-icon x" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/supremehospitalsomr/" class="social-icon ig" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@supremehospitals" class="social-icon yt" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Universal Appointment Modal -->
+<div class="modal-overlay" id="appointment-modal">
+  <div class="modal-content">
+    <button class="close-modal" onclick="closeModal()">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="modal-header text-center">
+      <h3 class="text-primary">Request an Appointment</h3>
+      <p>
+        High-end clinical care is just a request away. Fill the details below.
+      </p>
+    </div>
+    <form
+      class="appointment-form"
+      onsubmit="
+        event.preventDefault();
+        alert('Request sent! Our team will contact you shortly.');
+        closeModal();
+      "
+    >
+      <div class="form-group mb-3">
+        <input
+          type="text"
+          placeholder="Full Name"
+          required
+          class="form-control-premium"
+        />
+      </div>
+      <div class="form-group mb-3">
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          required
+          class="form-control-premium"
+        />
+      </div>
+      <div class="form-group mb-3">
+        <select required class="form-control-premium">
+          <option value="" disabled selected>Select Department</option>
+          <option value="cardio">Cardiology</option>
+          <option value="neuro">Neurology</option>
+          <option value="ortho">Orthopedics</option>
+          <option value="dental">Dental</option>
+          <option value="gyno">Gynecology</option>
+          <option value="peds">Pediatrics</option>
+          <option value="gastro">Gastroenterology</option>
+        </select>
+      </div>
+      <div class="form-group mb-4">
+        <textarea
+          placeholder="Message / Symptoms"
+          rows="3"
+          class="form-control-premium"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary full-width btn-glow py-3">
+        Confirm Appointment <i class="fas fa-paper-plane ml-2"></i>
+      </button>
+    </form>
+  </div>
+</div>

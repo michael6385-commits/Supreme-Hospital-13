@@ -1,0 +1,578 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Radiology Hospital in Padur, Chennai | Supreme Hospitals</title>
+    <meta
+      name="description"
+      content="Supreme Hospitals in Padur offers high-precision radiology services – CT scan, X-ray, and ultrasound imaging for fast and accurate diagnosis."
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body class="department-page">
+    <div id="header-placeholder"></div>
+
+    <!-- Floating CTA -->
+    <button
+      class="floating-cta ripple"
+      onclick="window.location.href = 'book-an-appointment.html'"
+    >
+      <span class="pulse-ring"></span>
+      <i class="fas fa-calendar-plus"></i>
+      <span>Book an Appointment</span>
+    </button>
+
+    <!-- Appointment Modal Form -->
+    <div class="modal-overlay" id="appointment-modal">
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Request an Appointment</h3>
+          <p>
+            Fill out the form below and our team will get back to you shortly.
+          </p>
+        </div>
+        <form class="appointment-form" onsubmit="event.preventDefault()">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="radiology" selected>Radiology</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="dental">Dental</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="diabetology">Diabetology</option>
+              <option value="psychiatry">Psychiatry</option>
+              <option value="ent">ENT</option>
+              <option value="general-surgery">General Surgery</option>
+              <option value="gastroenterology">Medical Gastroenterology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="obstetrics-gynaecology">
+                Obstetrics & Gynaecology
+              </option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="ophthalmology">Ophthalmology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="pain-palliative-care">
+                Pain & Palliative Care
+              </option>
+              <option value="general-medicine">General Medicine</option>
+              <option value="urology">Urology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" required />
+          </div>
+          <div class="form-group full-width">
+            <textarea placeholder="Message / Symptoms" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width btn-glow">
+            Confirm Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO BANNER -->
+
+      <section
+        class="hero-premium"
+        style="
+          background-image: url('https://res.cloudinary.com/dr7jaclns/image/upload/v1780919283/radiology_banner_new_gd2xlp.jpg');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Department</span> <i class="fas fa-chevron-right"></i>
+              <span class="current">Radiology</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Supreme Excellence</h5>
+            <h1>Department of Radiology</h1>
+            <p class="hero-subtitle">
+              Advanced CT Scan Facility Now Open. Crystal-clear imaging that
+              helps doctors detect conditions early and diagnose with
+              confidence.
+            </p>
+            <div class="hero-btns mt-5 stagger-1">
+              <a
+                href="book-an-appointment.html"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Book Appointment</a
+              >
+              <a
+                href="contact-us.html"
+                class="btn btn-outline-white btn-lg px-5 ml-md-3"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: GRAND LAUNCH CT SCAN -->
+      <section class="bg-white" style="padding: 50px 0 30px;">
+        <div class="container">
+          <div class="row align-center">
+            <!-- Left Column: Content -->
+            <div class="col-lg-9 fade-up">
+              <h5 class="subtitle text-accent mb-2">Grand Launch</h5>
+              <h2 class="display-5 fw-bold mb-3">Advanced CT Scan Facility Now Open</h2>
+              <p class="text-muted leading-relaxed mb-3 fs-5">
+                We proudly announce the launch of our <strong>state-of-the-art CT Scan machine</strong>, delivering precise diagnostics, faster results, and enhanced patient safety through advanced technology.
+              </p>
+              
+              <div class="mb-2 mt-4">
+                <div class="d-flex align-items-start mb-2 fade-up">
+                  <i class="fas fa-check text-primary me-3 mt-1 fw-bold"></i>
+                  <span class="text-muted">High-resolution & ultra-clear imaging</span>
+                </div>
+                <div class="d-flex align-items-start mb-2 fade-up stagger-1">
+                  <i class="fas fa-check text-primary me-3 mt-1 fw-bold"></i>
+                  <span class="text-muted">Advanced low-radiation safety protocols</span>
+                </div>
+                <div class="d-flex align-items-start mb-2 fade-up stagger-2">
+                  <i class="fas fa-check text-primary me-3 mt-1 fw-bold"></i>
+                  <span class="text-muted">Faster scans for emergency & routine diagnosis</span>
+                </div>
+                <div class="d-flex align-items-start fade-up stagger-3">
+                  <i class="fas fa-check text-primary me-3 mt-1 fw-bold"></i>
+                  <span class="text-muted">Comfortable, patient-friendly experience</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Image -->
+            <div class="col-lg-3 fade-up stagger-1 d-flex justify-content-center">
+              <img
+                src="images/grand_launch.png"
+                alt="Grand Launch Advanced CT Scan"
+                class="h-auto rounded-lg box-shadow"
+                style="display: block; max-width: 240px; width: 100%;"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SECTION 2B: KEY FEATURES GRID -->
+      <section class="section-padding key-features-section" style="background: linear-gradient(135deg, #0066cc 0%, #0a5ea8 100%); color: white;">
+        <div class="container">
+          <div class="section-title text-center fade-up mb-5">
+            <h2 class="text-white mb-4" style="color: #ffffff !important;">Key Features of Our Scan Facility</h2>
+          </div>
+
+          <div class="radiology-key-features-grid">
+            <div class="fade-up">
+              <div class="feature-card-premium text-white h-100">
+                <div class="feature-image mb-4 rounded-lg overflow-hidden" style="height: 200px; background: rgba(255,255,255,0.1);">
+                  <img src="https://supremehospitals.in/wp-content/uploads/2026/01/ct_image-1024x683.png" alt="High-Resolution Imaging" class="w-100 h-100 object-fit-cover" />
+                </div>
+                <h3 class="text-white mb-3">High-Resolution Imaging</h3>
+                <p class="text-light">Crystal-clear imaging that helps doctors detect conditions early and diagnose with confidence.</p>
+              </div>
+            </div>
+            <div class="fade-up stagger-1">
+              <div class="feature-card-premium text-white h-100">
+                <div class="feature-image mb-4 rounded-lg overflow-hidden" style="height: 200px; background: rgba(255,255,255,0.1);">
+                  <img src="https://supremehospitals.in/wp-content/uploads/2026/01/image1-1024x683.jpeg" alt="Low Radiation Technology" class="w-100 h-100 object-fit-cover" />
+                </div>
+                <h3 class="text-white mb-3">Low Radiation Technology</h3>
+                <p class="text-light">Advanced dose-reduction techniques ensure patient safety without compromising image quality.</p>
+              </div>
+            </div>
+            <div class="fade-up stagger-2">
+              <div class="feature-card-premium text-white h-100">
+                <div class="feature-image mb-4 rounded-lg overflow-hidden" style="height: 200px; background: rgba(255,255,255,0.1);">
+                  <img src="https://supremehospitals.in/wp-content/uploads/2026/01/photo-1588776814546-1ffcf47267a5-1024x683.jpeg" alt="Fast & Accurate Scans" class="w-100 h-100 object-fit-cover" />
+                </div>
+                <h3 class="text-white mb-3">Fast & Accurate Scans</h3>
+                <p class="text-light">Rapid scan times ideal for emergency cases and efficient diagnosis with minimal waiting.</p>
+              </div>
+            </div>
+            <div class="fade-up stagger-3">
+              <div class="feature-card-premium text-white h-100">
+                <div class="feature-image mb-4 rounded-lg overflow-hidden" style="height: 200px; background: rgba(255,255,255,0.1);">
+                  <img src="https://supremehospitals.in/wp-content/uploads/2026/01/patient_friendly-1024x683.png" alt="Patient-Friendly Design" class="w-100 h-100 object-fit-cover" />
+                </div>
+                <h3 class="text-white mb-3">Patient-Friendly Design</h3>
+                <p class="text-light">Spacious, comfortable design suitable for elderly, pediatric, and claustrophobic patients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: OVERVIEW -->
+      <section class="section-padding bg-white">
+        <div class="container">
+          <div class="section-title text-center fade-up mb-5">
+            <h2>Overview</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          
+          <div class="row align-center">
+            <!-- Left Side: Image -->
+            <div class="col-lg-3 fade-up d-flex justify-content-center">
+              <img
+                src="https://supremehospitals.in/wp-content/uploads/2026/01/supreme_mt-1024x576.jpg"
+                alt="CT Scan Facility"
+                class="h-auto rounded-lg box-shadow"
+                style="display: block; max-width: 240px; width: 100%;"
+              />
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="col-lg-9 fade-up stagger-1">
+              <p class="text-muted leading-relaxed mb-3 fs-5">
+                At <strong>Supreme Hospital Radiology Department</strong>, we combine <strong>advanced diagnostic technology with expert clinical insight</strong> to deliver accurate, timely, and reliable imaging services.
+              </p>
+              <p class="text-muted leading-relaxed mb-3 fs-5">
+                With the introduction of our <strong>state-of-the-art CT Scan facility</strong>, we strengthen our commitment to early detection, precise diagnosis, and patient safety. Our imaging services are powered by modern equipment designed for <strong>high-resolution clarity, low radiation exposure, and faster scan times</strong>, ensuring both clinical excellence and patient comfort.
+              </p>
+              <p class="text-muted leading-relaxed fs-5">
+                Our team of <strong>experienced radiologists</strong> works closely with physicians across specialties, enabling seamless diagnosis and informed treatment planning. Every scan is interpreted with precision, care, and clinical responsibility, supporting better health outcomes at every stage of care. At Supreme Hospital, radiology is not just about images—it is about <strong>trust, accuracy, and compassionate care</strong>, delivered through innovation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: ALL DIAGNOSTIC SCANS UNDER ONE ROOF -->
+      <section class="section-padding bg-soft-blue">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto fade-up">
+              <h2 class="mb-4 text-center">All Diagnostic Scans Under One Roof</h2>
+              <div class="title-line mx-auto mb-5"></div>
+              
+              <p class="text-muted leading-relaxed mb-4 fs-5">
+                At <strong>Supreme Hospital</strong>, we bring the complete spectrum of diagnostic imaging together in one centralized facility—designed for <strong>convenience, accuracy, and patient comfort</strong>.
+              </p>
+              
+              <p class="text-muted leading-relaxed mb-4 fs-5">
+                Our <strong>advanced radiology department</strong> offers a wide range of imaging services including <strong>X-ray, CT Scan, MRI, Ultrasound, Mammography, and Interventional Radiology</strong>, all supported by modern technology and expert medical professionals.
+              </p>
+              
+              <p class="text-muted leading-relaxed mb-4 fs-5">
+                By having all scans under one roof, we ensure <strong>faster diagnosis, coordinated care, and a seamless patient experience</strong>, eliminating the need to visit multiple locations. Each scan is performed with precision, interpreted by experienced radiologists, and integrated smoothly into your treatment journey.
+              </p>
+              
+              <p class="text-muted leading-relaxed fs-5">
+                At <strong>Supreme Hospital</strong>, your diagnostic care is <strong>efficient, accessible, and reliable</strong>—because timely and accurate imaging plays a vital role in better health outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: IMAGING MODALITIES (TREATMENTS SCROLLER) -->
+      <section class="treatments-scroll-section section-padding bg-white">
+        <div class="container-fluid p-0">
+          <div class="section-title text-center mb-5 fade-up">
+            <h5 class="subtitle text-accent">Advanced Technology</h5>
+            <h2>Imaging Modalities</h2>
+            <div class="title-line mx-auto"></div>
+            <p class="max-w-800 mx-auto mt-4 text-muted">
+              Supreme Radiology offers a comprehensive range of imaging
+              modalities, each meticulously selected to serve specific
+              diagnostic purposes.
+            </p>
+          </div>
+
+          <div class="scroller-container mt-5">
+            <div class="scroller-inner">
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>X-ray</h3>
+                  <p class="text-sm text-muted">
+                    Fast and reliable imaging for evaluating bones, chest, and
+                    basic diagnostic needs.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>CT or CAT scan</h3>
+                  <p class="text-sm text-muted">
+                    Advanced cross-sectional imaging delivering high-resolution,
+                    accurate, and rapid diagnosis.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>MRI</h3>
+                  <p class="text-sm text-muted">
+                    Detailed imaging of soft tissues, brain, spine, joints, and
+                    internal organs without radiation.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Ultrasound</h3>
+                  <p class="text-sm text-muted">
+                    Real-time imaging using sound waves for abdominal, pelvic,
+                    cardiac, and pregnancy assessments.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Mammography</h3>
+                  <p class="text-sm text-muted">
+                    Specialized breast imaging for early detection, screening,
+                    and accurate diagnosis.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Interventional Radiology</h3>
+                  <p class="text-sm text-muted">
+                    Minimally invasive, image-guided procedures for targeted
+                    diagnosis and treatment.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: DIAGNOSTIC RADIOLOGY (UNIQUE CONTENT) -->
+      <section
+        class="special-info-section section-padding bg-white"
+      >
+        <div class="container">
+          <div class="row align-center">
+            <div class="col-lg-9 fade-up">
+              <h5 class="subtitle text-accent">Precision Care</h5>
+              <h2 class="text-blue">Diagnostic Radiology</h2>
+              <div class="title-line mb-4"></div>
+              <p class="text-muted leading-relaxed fs-5">
+                Diagnostic Radiology at Supreme Hospital is not just a service;
+                it’s our commitment to delivering accurate and timely diagnosis.
+                Our CT Scan services for diagnostic imaging provide detailed
+                insights into the internal structures of the body. Whether for
+                preventive screenings or precise diagnoses, our state-of-the-art
+                CT Scan technology ensures that you receive the highest standard
+                of care. Trust Supreme Radiology for excellence in diagnostic
+                imaging, where precision meets compassion for a healthier
+                future.
+              </p>
+            </div>
+            <div class="col-lg-3 fade-up stagger-1 mt-sm-5 d-flex justify-content-center">
+              <img
+                src="https://radiologybusiness.com/sites/default/files/styles/top_stories/public/2024-05/istock-1477482163.jpg.webp?itok=Gr38tuJH"
+                alt="Diagnostic Radiology"
+                class="h-auto rounded-lg box-shadow"
+                style="display: block; max-width: 240px; width: 100%;"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: SUBSPECIALTIES -->
+      <section class="section-padding bg-white">
+        <div class="container">
+          <div class="row align-center">
+            <!-- Left: Text Content -->
+            <div class="col-lg-6 fade-up">
+              <h5 class="subtitle text-accent">Specialized Clinical Focus</h5>
+              <h2 class="symptoms-title">Subspecialties in Radiology</h2>
+              <p class="symptoms-desc leading-relaxed">
+                Radiology is a medical specialty that uses medical imaging to diagnose and treat diseases within the human body. Our advanced department utilizes cutting-edge technologies to offer precise, non-invasive insights that guide critical clinical decisions across multiple specialties.
+              </p>
+            </div>
+
+            <!-- Right: Subspecialties List -->
+            <div class="col-lg-6 fade-up stagger-1">
+              <ul class="signs-bullet-list mt-4">
+                <li><i class="fas fa-circle-check text-primary"></i> Diagnostic Radiology</li>
+                <li><i class="fas fa-circle-check text-primary"></i> Interventional Radiology</li>
+                <li><i class="fas fa-circle-check text-primary"></i> Neuroradiology</li>
+                <li><i class="fas fa-circle-check text-primary"></i> Pediatric Radiology</li>
+                <li><i class="fas fa-circle-check text-primary"></i> Breast Imaging &amp; Mammography</li>
+                <li><i class="fas fa-circle-check text-primary"></i> Musculoskeletal Radiology</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- SECTION 7: EXPERTS / CONSULTANTS -->
+      <section class="consultants-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Radiology Experts</h5>
+            <h2>Our Consultants</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <!-- Swiper Consultants Carousel -->
+          <div class="swiper swiper-consultants mt-5">
+            <div class="swiper-wrapper">
+              <!-- Dr. Lavanya -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Lavanya</h4>
+                    <span class="doc-spec">MBBS, MDRD (Radiology)</span>
+                    <ul class="doc-highlights">
+                      <li>Diagnostic Radiology</li>
+                      <li>CT, MRI & Ultrasound Imaging</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        </div>
+      </section>
+
+      <!-- SECTION 8: FAQ -->
+      <section class="dept-faq-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Common Questions</h5>
+            <h2>Frequently Asked Questions</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <div class="faq-accordion mt-5 max-w-800 mx-auto">
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What makes this CT scan different from a regular CT?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Our high-speed CT provides faster imaging with enhanced
+                  clarity while using significantly lower radiation, ensuring
+                  safer and more accurate diagnosis.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                Is the CT scan safe for children and elderly patients?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Yes. The low radiation technology is designed to be safer for
+                  all age groups, including children, adults, and seniors.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How quickly will I get my CT scan results?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Images are captured within seconds, and final CT scan reports
+                  are typically ready within 24 – 48 hours, with urgent cases
+                  often available even sooner, supporting faster clinical
+                  decisions.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                Will I experience any pain during the imaging procedure?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  CT scan imaging is painless. You won't feel the radiation itself, but some people may experience mild anxiety or claustrophobia. Our team ensures your comfort throughout the procedure with clear instructions and support.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How will we know if the imaging results are accurate?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Your doctor will monitor and correlate the imaging findings with your clinical symptoms, physical exams, and follow-up scans to ensure accuracy and guide your treatment plan.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                Are imaging procedures safe?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Yes, imaging procedures are safe when performed by trained professionals. Our team uses the lowest possible dose of radiation to get accurate results, following strict safety protocols.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What is diagnostic radiology?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Diagnostic radiology involves imaging techniques like X-rays, CT scans, MRI, and ultrasounds to identify diseases or injuries. These tools help doctors diagnose conditions early, plan treatments, and monitor progress—all without the need for invasive procedures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

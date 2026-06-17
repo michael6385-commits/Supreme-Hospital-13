@@ -1,0 +1,382 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Diabetes Care in Padur, Navalur & Kelambakkam | Supreme Hospitals
+    </title>
+    <meta
+      name="description"
+      content="Supreme Hospitals offers expert diabetes care in Padur & Navalur – personalized treatment for blood sugar control, insulin management, and Type 1/2 care."
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body class="department-page">
+    <div id="header-placeholder"></div>
+
+    <!-- Floating CTA -->
+    <button
+      class="floating-cta ripple"
+      onclick="window.location.href = 'book-an-appointment.html'"
+    >
+      <span class="pulse-ring"></span>
+      <i class="fas fa-calendar-plus"></i>
+      <span>Book an Appointment</span>
+    </button>
+
+    <!-- Appointment Modal Form -->
+    <div class="modal-overlay" id="appointment-modal">
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Request an Appointment</h3>
+          <p>
+            Fill out the form below and our team will get back to you shortly.
+          </p>
+        </div>
+        <form class="appointment-form" onsubmit="event.preventDefault()">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="diabetology" selected>Diabetology</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="dental">Dental</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="psychiatry">Psychiatry</option>
+              <option value="ent">ENT</option>
+              <option value="general-surgery">General Surgery</option>
+              <option value="gastroenterology">Medical Gastroenterology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="obstetrics-gynaecology">
+                Obstetrics & Gynaecology
+              </option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="ophthalmology">Ophthalmology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="pain-palliative-care">
+                Pain & Palliative Care
+              </option>
+              <option value="general-medicine">General Medicine</option>
+              <option value="urology">Urology</option>
+              <option value="radiology">Radiology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" required />
+          </div>
+          <div class="form-group full-width">
+            <textarea placeholder="Message / Symptoms" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width btn-glow">
+            Confirm Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO BANNER -->
+
+      <section
+        class="hero-premium"
+        style="
+          background-image: url('https://res.cloudinary.com/dr7jaclns/image/upload/v1781084324/diabetology_banner_tyffc6.jpg');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Department</span> <i class="fas fa-chevron-right"></i>
+              <span class="current">Diabetology</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Supreme Excellence</h5>
+            <h1>Diabetes Care & Management</h1>
+            <p class="hero-subtitle">
+              Comprehensive clinical treatment for blood sugar control. Expert
+              care for Type 1, Type 2, and Gestational Diabetes by top
+              specialists.
+            </p>
+            <div class="hero-btns mt-5 stagger-1">
+              <a
+                href="book-an-appointment.html"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Book Appointment</a
+              >
+              <a
+                href="contact-us.html"
+                class="btn btn-outline-white btn-lg px-5 ml-md-3"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: OVERVIEW -->
+      <section class="partner-section section-padding bg-white">
+        <div class="container">
+          <div class="row align-center flex-wrap">
+            <div class="col-md-6 fade-up">
+              <h5 class="subtitle text-accent">Excellence in Diabetes Care</h5>
+              <h2>Overview</h2>
+              <div class="title-line mb-4"></div>
+              <p class="text-muted leading-relaxed mb-4">
+                Supreme Hospital’s Diabetology Department specializes in providing comprehensive diagnosis, treatment, and management of diabetes mellitus. We have the <strong>Best Doctor for Diabetes</strong> who is committed to providing personalized care to the unique needs of each patient.
+              </p>
+              <p class="text-muted leading-relaxed mb-5">
+                As the <strong>Best Diabetic Hospital</strong>, we also employ state-of-the-art technologies and evidence-based practices to ensure the highest standards of diabetes care.
+              </p>
+
+            </div>
+            <div class="col-md-6 fade-up stagger-1 mt-sm-5 text-center">
+              <div class="dept-img-container rounded-30 box-shadow overflow-hidden">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1781084337/diabetology_clinical_k0miw1.png"
+                  alt="Clinical Diabetic Care"
+                  class="img-fluid w-100"
+                  style="display: block; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: DIABETES TYPES (AUTO SCROLL) -->
+      <section class="treatments-scroll-section section-padding bg-soft-blue">
+        <div class="container-fluid p-0">
+          <div class="section-title text-center mb-5 fade-up">
+            <h5 class="subtitle text-accent">Clinical Conditions</h5>
+            <h2>Managing All Types of Diabetes</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+
+          <div class="scroller-container mt-5">
+            <div class="scroller-inner">
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Type 1 Diabetes</h3>
+                  <p class="text-sm text-muted">
+                    Specialized care addressing the autoimmune nature of Type 1,
+                    focusing on insulin replacement therapy.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Type 2 Diabetes</h3>
+                  <p class="text-sm text-muted">
+                    Emphasizing lifestyle interventions and advanced medications
+                    to combat insulin resistance.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Gestational Diabetes</h3>
+                  <p class="text-sm text-muted">
+                    Expert care for diabetes during pregnancy, ensuring health
+                    for both mother and child child safely.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Prediabetes</h3>
+                  <p class="text-sm text-muted">
+                    Early identification through OGTT to manage and reverse
+                    elevated blood sugar levels promptly.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Insulin Resistance</h3>
+                  <p class="text-sm text-muted">
+                    Targeted treatment options to improve cellular response to
+                    insulin for better glucose control.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: DIAGNOSTICS & TECH (UNIQUE SOURCE SECTION) -->
+      <section class="diagnostic-section section-padding bg-white">
+        <div class="container">
+          <div class="row align-center">
+            <div class="col-md-6 order-md-2 fade-up">
+              <h5 class="subtitle text-accent">Precision Assessment</h5>
+              <h2>Tools & Monitoring</h2>
+              <div class="title-line mb-4"></div>
+              <p class="text-muted leading-relaxed mb-4">
+                Supreme Hospital utilizes the
+                <strong>Oral Glucose Tolerance Test (OGTT)</strong> to diagnose
+                diabetes or prediabetes by closely monitoring blood sugar levels
+                following glucose ingestion.
+              </p>
+              <p class="text-muted leading-relaxed mb-4">
+                We perform the <strong>HbA1c Test</strong> to evaluate your
+                average blood sugar levels over the past few months, providing a
+                clear picture of long-term diabetes control.
+              </p>
+              <p class="text-muted leading-relaxed">
+                Using
+                <strong>Continuous Glucose Monitoring (CGM)</strong> wearable
+                devices, we enable real-time tracking of blood sugar, empowering
+                patients to make informed adjustments to their plans.
+              </p>
+            </div>
+            <div
+              class="col-md-6 order-md-1 fade-up stagger-1 mt-sm-5 text-center"
+            >
+              <div class="dept-img-container rounded-30 box-shadow overflow-hidden">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780918328/diabetology_tech_anoeqw.png"
+                  alt="Continuous Glucose Monitoring (CGM)"
+                  class="img-fluid w-100"
+                  style="display: block; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+            <!-- SECTION 6: EXPERTS / CONSULTANTS -->
+      <section class="consultants-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Diabetes Care Experts</h5>
+            <h2>Our Experts</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <!-- Swiper Consultants Carousel -->
+          <div class="swiper swiper-consultants mt-5">
+            <div class="swiper-wrapper">
+              <!-- Dr. Arun Kumar. R -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Arun Kumar. R</h4>
+                    <span class="doc-spec">MBBS, MD, PhD., Dip Diab, FRCP (Glasg), FRCP (London)</span>
+                    <ul class="doc-highlights">
+                      <li>Type 1 & 2 Diabetes Care</li>
+                      <li>Diabetic Foot Care Specialist</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        </div>
+      </section>
+
+      <!-- SECTION 7: FAQ -->
+      <section class="dept-faq-section section-padding bg-white">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Patient Health Guidance</h5>
+            <h2>Frequently Asked Questions</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <div class="faq-accordion mt-5 max-w-800 mx-auto">
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What are the differences between type 1 and type 2 diabetes?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Type 1 diabetes is an autoimmune condition where the body doesn't produce insulin. It often develops in childhood. Type 2 diabetes usually occurs in adults and results from insulin resistance or insufficient insulin production. Lifestyle factors like diet and inactivity often contribute to Type 2 diabetes.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What are the common symptoms of diabetes?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Common symptoms of diabetes include frequent urination, excessive thirst, unexplained weight loss, fatigue, blurred vision, and slow-healing wounds. Some people may also experience increased hunger, numbness in hands or feet, or recurring infections. If you notice these signs, it's important to consult a healthcare provider for proper evaluation.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How often should I monitor my blood sugar levels?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  The frequency of blood sugar monitoring depends on your diabetes type and treatment plan. Typically, people with type 1 diabetes or insulin-dependent type 2 diabetes should check levels multiple times daily. For others, once or twice daily may be sufficient. Always follow your doctor's recommendations for accurate monitoring.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                Can diabetes be cured?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Currently, there is no cure for diabetes. However, it can be effectively managed with lifestyle changes, medication, insulin therapy, and regular monitoring. Some people with type 2 diabetes can achieve remission through diet and exercise. Continuous medical support is essential for long-term diabetes management and complication prevention.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

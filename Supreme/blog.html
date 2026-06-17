@@ -1,0 +1,402 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Supreme Speciality Hospital</title>
+    <meta
+      name="description"
+      content="Read the latest healthcare insights, tips, and news from Supreme Speciality Hospital."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    
+    <style>
+      .blog-container {
+        width: 100%;
+        margin-top: 80px; /* Space for fixed header */
+        min-height: 60vh;
+        background-color: #ffffff;
+      }
+      
+      /* Post Grid Layout styles from original site */
+      .pt-cv-view {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 40px 15px 80px 15px;
+      }
+      .pt-cv-page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+      }
+      @media (max-width: 768px) {
+        .pt-cv-page {
+          grid-template-columns: 1fr;
+          grid-gap: 30px;
+        }
+      }
+      
+      .pt-cv-content-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      
+      .pt-cv-thumb-wrapper {
+        margin-bottom: 15px;
+        width: 100%;
+        aspect-ratio: 526 / 165;
+        overflow: hidden;
+      }
+      .pt-cv-thumbnail {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+      
+      .pt-cv-taxoterm.above_title {
+        margin-bottom: 8px;
+        font-size: 0.85rem;
+        font-family: 'Inter', sans-serif;
+      }
+      .pt-cv-taxoterm.above_title a {
+        color: #4f80e1;
+        text-decoration: none;
+        margin-right: 8px;
+        font-weight: 400;
+      }
+      .pt-cv-taxoterm.above_title a:hover {
+        text-decoration: underline;
+      }
+      
+      .pt-cv-title {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.22rem;
+        font-weight: 700;
+        line-height: 1.45;
+        margin: 0 0 12px 0;
+      }
+      .pt-cv-title a {
+        color: #0056b3;
+        text-decoration: none;
+      }
+      .pt-cv-title a:hover {
+        color: #003d80;
+      }
+      
+      .pt-cv-content {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.95rem;
+        color: #555555;
+        line-height: 1.65;
+      }
+      .pt-cv-rmwrap {
+        margin-top: 15px;
+      }
+      .pt-cv-readmore.btn.btn-success {
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 8px 16px;
+        font-size: 0.88rem;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+        border: none;
+      }
+      .pt-cv-readmore.btn.btn-success:hover {
+        background-color: #0056b3;
+      }
+      
+      #blogIframe {
+        width: 100%;
+        border: none;
+        display: block;
+      }
+
+      /* Premium Pagination Styles */
+      .pt-cv-pagination-wrapper {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pt-cv-pagination.pagination {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid #dee2e6;
+      }
+      .pt-cv-pagination.pagination li {
+        display: inline;
+      }
+      .pt-cv-pagination.pagination li a {
+        display: block;
+        padding: 10px 18px;
+        color: #0054a9;
+        background-color: #ffffff;
+        border-right: 1px solid #dee2e6;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+      }
+      .pt-cv-pagination.pagination li:last-child a {
+        border-right: none;
+      }
+      .pt-cv-pagination.pagination li.active a {
+        color: #ffffff;
+        background-color: #0054a9;
+        border-color: #0054a9;
+      }
+      .pt-cv-pagination.pagination li a:hover:not(.active) {
+        background-color: #f8f9fa;
+        color: #003d80;
+      }
+    </style>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body class="blog-page">
+    <div id="header-placeholder"></div>
+
+    <main class="blog-container">
+      <!-- Native Blog Landing Page Grid -->
+      <div id="nativeBlogLayout" style="display: none;">
+        <!-- Header -->
+        <div class="text-center" style="padding-top: 60px; padding-bottom: 20px;">
+          <h2 style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #00458b; font-size: 2.2rem; margin: 0;">Blogs</h2>
+        </div>
+
+        <!-- Post Grid Section -->
+        <div class="pt-cv-view">
+          <div class="pt-cv-page" id="blogGrid">
+            <!-- Rendered dynamically -->
+          </div>
+          <!-- Premium Pagination Bar matching screenshot exactly -->
+          <div class="pt-cv-pagination-wrapper">
+            <ul class="pt-cv-pagination pt-cv-ajax pagination">
+              <li class="active"><a href="#" onclick="event.preventDefault();">1</a></li>
+              <li><a href="#" onclick="event.preventDefault();">2</a></li>
+              <li><a href="#" onclick="event.preventDefault();">3</a></li>
+              <li><a href="#" onclick="event.preventDefault();">4</a></li>
+              <li><a href="#" onclick="event.preventDefault();">5</a></li>
+              <li><a href="#" onclick="event.preventDefault();">&gt;</a></li>
+              <li><a href="#" onclick="event.preventDefault();">&raquo;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Iframe layout for single blog view -->
+      <div id="iframeBlogLayout" style="display: none; width: 100%;">
+        <iframe id="blogIframe" scrolling="no"></iframe>
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+
+    <!-- Scripts -->
+    <script src="blog-posts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const blogUrl = urlParams.get('url');
+
+        const nativeLayout = document.getElementById('nativeBlogLayout');
+        const iframeLayout = document.getElementById('iframeBlogLayout');
+        const iframe = document.getElementById('blogIframe');
+
+        if (blogUrl) {
+          // Show iframe layout for single blog posts
+          nativeLayout.style.display = 'none';
+          iframeLayout.style.display = 'block';
+          iframe.src = 'blog-proxy.php?url=' + encodeURIComponent(blogUrl);
+        } else {
+          // Show native layout for blog grid list
+          nativeLayout.style.display = 'block';
+          iframeLayout.style.display = 'none';
+
+          // Native pagination logic
+          const postsPerPage = 10;
+          let currentPage = parseInt(urlParams.get('_page')) || 1;
+          const totalPosts = BLOG_POSTS.length;
+          const totalPages = Math.ceil(totalPosts / postsPerPage);
+
+          if (currentPage < 1) currentPage = 1;
+          if (currentPage > totalPages) currentPage = totalPages;
+
+          const blogGrid = document.getElementById('blogGrid');
+          const paginationUl = document.querySelector('.pt-cv-pagination.pagination');
+
+          function renderPosts(page) {
+            blogGrid.innerHTML = '';
+            const start = (page - 1) * postsPerPage;
+            const end = Math.min(start + postsPerPage, totalPosts);
+            const pagePosts = BLOG_POSTS.slice(start, end);
+
+            pagePosts.forEach(post => {
+              // Convert categories list to HTML
+              const catsHtml = post.categories.map(cat => 
+                `<a href="#" onclick="event.preventDefault();" class="pt-cv-tax-category">${cat}</a>`
+              ).join(' ');
+
+              // Rewrite links to proxy through blog.html?url= so single view works
+              const proxyLink = 'blog.html?url=' + encodeURIComponent(post.link);
+
+              const card = document.createElement('div');
+              card.className = 'pt-cv-content-item pt-cv-1-col';
+              card.innerHTML = `
+                <div class="pt-cv-thumb-wrapper">
+                  <a href="${proxyLink}" class="_self pt-cv-href-thumbnail pt-cv-thumb-default">
+                    <img width="526" height="165" src="${post.img}" class="pt-cv-thumbnail" alt="${post.title}" decoding="async" />
+                  </a>
+                </div>
+                <div class="pt-cv-taxoterm above_title">${catsHtml}</div>
+                <h4 class="pt-cv-title">
+                  <a href="${proxyLink}">${post.title}</a>
+                </h4>
+                <div class="pt-cv-content">
+                  ${post.excerpt}
+                  <div class="pt-cv-rmwrap">
+                    <a href="${proxyLink}" class="_self pt-cv-readmore btn btn-success">Read More</a>
+                  </div>
+                </div>
+              `;
+              blogGrid.appendChild(card);
+            });
+          }
+
+          function renderPagination(page) {
+            paginationUl.innerHTML = '';
+
+            // Helper to add list items
+            function addPageItem(text, targetPage, active = false, disabled = false) {
+              const li = document.createElement('li');
+              if (active) li.className = 'active';
+              if (disabled) li.style.pointerEvents = 'none';
+
+              const a = document.createElement('a');
+              a.href = '#';
+              a.innerHTML = text;
+              a.addEventListener('click', function(e) {
+                e.preventDefault();
+                goToPage(targetPage);
+              });
+              li.appendChild(a);
+              paginationUl.appendChild(li);
+            }
+
+            // First & Prev Buttons
+            if (page > 1) {
+              addPageItem('&laquo;', 1);
+              addPageItem('&lt;', page - 1);
+            }
+
+            // Page numbers
+            let startPage = Math.max(1, page - 2);
+            let endPage = Math.min(totalPages, page + 2);
+
+            if (startPage > 1) {
+              addPageItem('1', 1);
+              if (startPage > 2) {
+                addPageItem('...', startPage - 1, false, true);
+              }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+              addPageItem(i.toString(), i, i === page);
+            }
+
+            if (endPage < totalPages) {
+              if (endPage < totalPages - 1) {
+                addPageItem('...', endPage + 1, false, true);
+              }
+              addPageItem(totalPages.toString(), totalPages);
+            }
+
+            // Next & Last Buttons
+            if (page < totalPages) {
+              addPageItem('&gt;', page + 1);
+              addPageItem('&raquo;', totalPages);
+            }
+          }
+
+          function goToPage(page) {
+            currentPage = page;
+            renderPosts(currentPage);
+            renderPagination(currentPage);
+
+            // Update URL query parameter (_page=N) and strip .html from pathname
+            const cleanPath = window.location.pathname.replace('.html', '');
+            const newUrl = window.location.protocol + "//" + window.location.host + cleanPath + "?_page=" + page;
+            history.pushState({ _page: page }, '', newUrl);
+
+            // Scroll to top of blog section smoothly
+            window.scrollTo({
+              top: nativeLayout.offsetTop - 50,
+              behavior: 'smooth'
+            });
+          }
+
+          // Initial Render
+          renderPosts(currentPage);
+          renderPagination(currentPage);
+
+          // Handle back/forward browser buttons
+          window.addEventListener('popstate', function(event) {
+            const urlParamsPop = new URLSearchParams(window.location.search);
+            currentPage = parseInt(urlParamsPop.get('_page')) || 1;
+            renderPosts(currentPage);
+            renderPagination(currentPage);
+          });
+        }
+
+        // Iframe resizer listener
+        window.addEventListener('message', function(e) {
+          if (e.data && e.data.type === 'resize') {
+            var newH = e.data.height;
+            var curH = parseInt(iframe.style.height, 10) || 0;
+            if (Math.abs(newH - curH) > 30) {
+              iframe.style.height = newH + 'px';
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

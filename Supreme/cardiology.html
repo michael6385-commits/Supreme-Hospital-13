@@ -1,0 +1,426 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardiology | Supreme Speciality Hospitals</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body class="department-page">
+    <div id="header-placeholder"></div>
+
+    <!-- Floating CTA -->
+    <button
+      class="floating-cta ripple"
+      onclick="window.location.href = 'book-an-appointment.html'"
+    >
+      <span class="pulse-ring"></span>
+      <i class="fas fa-calendar-plus"></i>
+      <span>Book an Appointment</span>
+    </button>
+
+    <!-- Appointment Modal Form -->
+    <div class="modal-overlay" id="appointment-modal">
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Request an Appointment</h3>
+          <p>
+            Fill out the form below and our team will get back to you shortly.
+          </p>
+        </div>
+        <form class="appointment-form" onsubmit="event.preventDefault()">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="cardiology" selected>Cardiology</option>
+              <option value="dental">Dental</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="diabetology">Diabetology</option>
+              <option value="psychiatry">Psychiatry</option>
+              <option value="ent">ENT</option>
+              <option value="general-surgery">General Surgery</option>
+              <option value="gastroenterology">Gastroenterology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="obstetrics-gynaecology">
+                Obstetrics & Gynaecology
+              </option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="ophthalmology">Ophthalmology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="pain-palliative-care">
+                Pain & Palliative Care
+              </option>
+              <option value="general-medicine">General Medicine</option>
+              <option value="urology">Urology</option>
+              <option value="radiology">Radiology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" required />
+          </div>
+          <div class="form-group full-width">
+            <textarea placeholder="Message / Symptoms" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width btn-glow">
+            Confirm Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO BANNER -->
+
+      <section
+        class="hero-premium cardiology text-center"
+        style="
+          background-image: url('https://res.cloudinary.com/dr7jaclns/image/upload/v1780918298/cardiology_hero_jn4ega.jpg');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Department</span> <i class="fas fa-chevron-right"></i>
+              <span class="current">Cardiology</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Supreme Excellence</h5>
+            <h1>Department of Cardiology</h1>
+            <p class="hero-subtitle">
+              Advanced cardiac care and clinical heart-health solutions focused
+              on precision and restorative healing.
+            </p>
+            <div class="hero-btns mt-5 stagger-1">
+              <a
+                href="book-an-appointment.html"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Book Appointment</a
+              >
+              <a
+                href="contact-us.html"
+                class="btn btn-outline-white btn-lg px-5 ml-md-3"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: ABOUT DEPARTMENT (REAL CONTENT) -->
+      <section class="partner-section section-padding bg-white">
+        <div class="container">
+          <div class="row align-center flex-wrap">
+            <div class="col-md-6 fade-up">
+              <h2 style="color: #0b5b9c; font-weight: 700; font-size: 28px; margin-bottom: 8px;">Your Partner in Heart Health</h2>
+              <div style="width: 60px; height: 3px; background-color: #0b5b9c; margin-bottom: 24px;"></div>
+              
+              <p style="color: #4a4a4a; line-height: 1.7; font-size: 16px; margin-bottom: 32px; max-width: 100%;">
+                At Supreme Hospital, we understand that the heart is the most vital organ in the human body. That's why we are dedicated to providing the highest quality cardiovascular care to our patients. Our team of experienced cardiologists and cardiac surgeons is committed to using the latest technologies and techniques to provide the best possible outcomes for our patients. We offer a wide range of heart surgeries including heart transplant surgery.
+              </p>
+              
+              <h3 style="color: #333333; font-weight: 700; font-size: 18px; margin-bottom: 12px;">Advanced Cardiac Interventions</h3>
+              <p style="color: #4a4a4a; line-height: 1.7; font-size: 16px; margin-bottom: 16px; max-width: 100%;">
+                Supreme Hospital goes beyond Cardiac Surgery. Our state-of-the-art facilities offer modern diagnostic tools and cutting-edge treatment options. As leaders in <strong>Cardiac Surgery</strong>, our skilled team excels in routine procedures and complex surgeries, guaranteeing optimal outcomes. Moreover, our commitment extends to life-changing interventions, showcasing expertise in heart transplant procedures. At Supreme Hospital's Cardiology Department, revel in medical excellence, personalized care, and a comprehensive approach to enhance your heart health.
+              </p>
+
+            </div>
+            <div class="col-md-6 fade-up stagger-1 mt-sm-5 d-flex justify-content-center">
+              <div class="dept-img-placeholder box-shadow" style="width: 100%; max-width: 85%; margin: 0 auto;">
+                <img
+                  src="images/surgeons_operating.png"
+                  alt="Supreme Cardiology Care"
+                  class="img-fluid rounded-30"
+                  style="width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: TREATMENTS (AUTO SCROLL) -->
+      <section class="treatments-scroll-section section-padding bg-soft-blue">
+        <div class="container-fluid p-0">
+          <div class="section-title text-center mb-5 fade-up">
+            <h2 class="text-blue" style="font-size: 2.5rem; font-weight: 600; margin-bottom: 0.5rem;">Heart Transplant Surgery</h2>
+            <h3 class="text-blue mt-4" style="font-size: 1.8rem; font-weight: 500;">Comprehensive Care for Heart Conditions</h3>
+          </div>
+
+          <div class="scroller-container mt-5">
+            <div class="scroller-inner">
+              <!-- Card 1 -->
+              <div class="treatment-vibe-card">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780918306/cad_graphic_ajrikh.jpg"
+                  alt="Coronary Artery Disease"
+                />
+                <div class="treatment-vibe-content">
+                  <h3 style="font-size: 1.25rem; text-align: center; margin-bottom: 1rem;">Coronary Artery Disease (CAD)</h3>
+                  <p class="text-sm text-muted" style="text-align: left;">
+                    Supreme Hospital leads the charge in managing CAD, and addressing narrowed or blocked coronary arteries to mitigate chest pain and prevent heart attacks.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="treatment-vibe-card">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780919281/heart_failure_graphic_fkgwn2.jpg"
+                  alt="Heart Failure"
+                />
+                <div class="treatment-vibe-content">
+                  <h3 style="font-size: 1.25rem; text-align: center; margin-bottom: 1rem;">Heart Failure</h3>
+                  <p class="text-sm text-muted" style="text-align: left;">
+                    Our specialized care ensures effective management of heart failure symptoms, promoting a better quality of life for our patients.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="treatment-vibe-card">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780918304/arrhythmias_graphic_vl5gkg.jpg"
+                  alt="Arrhythmias"
+                />
+                <div class="treatment-vibe-content">
+                  <h3 style="font-size: 1.25rem; text-align: center; margin-bottom: 1rem;">Arrhythmias</h3>
+                  <p class="text-sm text-muted" style="text-align: left;">
+                    From atrial fibrillation to ventricular tachycardia, we expertly handle irregular heart rhythms to reduce the risk of complications.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="treatment-vibe-card">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780919279/hypertension_graphic_qzbxr6.jpg"
+                  alt="Hypertension"
+                />
+                <div class="treatment-vibe-content">
+                  <h3 style="font-size: 1.25rem; text-align: center; margin-bottom: 1rem;">Hypertension (High Blood Pressure)</h3>
+                  <p class="text-sm text-muted" style="text-align: left;">
+                    We focus on managing elevated blood pressure levels to alleviate strain on the heart and minimize the risk of heart disease and stroke.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="treatment-vibe-card">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780921676/valvular_disease_graphic_lq41o1.jpg"
+                  alt="Valvular Heart Disease"
+                />
+                <div class="treatment-vibe-content">
+                  <h3 style="font-size: 1.25rem; text-align: center; margin-bottom: 1rem;">Valvular Heart Disease</h3>
+                  <p class="text-sm text-muted" style="text-align: left;">
+                    We offer specialized treatment for heart valve problems, tackling issues like stenosis or regurgitation to enhance blood flow and optimize heart function.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="treatment-vibe-card">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780918305/congenital_heart_graphic_g5voy8.jpg"
+                  alt="Congenital Heart Defects"
+                />
+                <div class="treatment-vibe-content">
+                  <h3 style="font-size: 1.25rem; text-align: center; margin-bottom: 1rem;">Congenital Heart Defects</h3>
+                  <p class="text-sm text-muted" style="text-align: left;">
+                    Supreme Hospital provides comprehensive care for congenital heart conditions, ensuring personalized treatment for defects present at birth.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: VIDEO INFO BLOCK -->
+      <section class="video-info-section section-padding bg-white">
+        <div class="container text-center">
+          <div class="fade-up">
+            <h2 style="color: #0b5b9c; font-weight: 600; font-size: 2.2rem; margin-bottom: 30px;">
+              Visit Supreme Hospital – Your Gateway to Premier Cardiac Care
+            </h2>
+          </div>
+          <div class="fade-up stagger-1 mb-4">
+            <div style="border: 3px solid #3b4252; border-radius: 24px; padding: 12px; display: inline-block; background: white; width: 100%; max-width: 500px;">
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/bsB8DPjMlx4?start=6" title="Cardiology Information Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="fade-up stagger-2">
+            <p style="color: #555; line-height: 1.8; font-size: 15px; margin: 0 auto 30px; max-width: 900px;">
+              Supreme Hospital understands the importance of early diagnosis and precise management, aiming to significantly enhance your quality of life while minimizing serious complications. We offer scans and tests in one place to reduce your hassle so you are treated without further delays.
+            </p>
+          </div>
+          <div class="fade-up stagger-3">
+            <p style="font-weight: 700; font-size: 1.15rem; color: #111827; margin: 0;">
+              Explore cardiac care at Supreme Hospital and begin your journey to maintain optimal cardiac health.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: EXPERTS / CONSULTANTS -->
+      <section class="consultants-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Our Specialists</h5>
+            <h2>Meet Our Expert Doctors</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+
+          <!-- Swiper Consultants Carousel -->
+          <div class="swiper swiper-consultants mt-5">
+            <div class="swiper-wrapper">
+              <!-- Dr. Anand Manjunath. K -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Anand Manjunath. K</h4>
+                    <span class="doc-spec">MBBS, MD Pediatrics, DM Cardiology</span>
+                    <ul class="doc-highlights">
+                      <li>Pediatric Cardiology Specialist</li>
+                      <li>Diagnostic & Therapeutic Care</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Dr. Arun Arockia Rajesh. J -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Arun Arockia Rajesh. J</h4>
+                    <span class="doc-spec">MBBS, MD General Medicine, DM Cardiology</span>
+                    <ul class="doc-highlights">
+                      <li>Interventional Cardiology Expert</li>
+                      <li>Coronary Artery Disease Management</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: FAQ -->
+      <section class="dept-faq-section section-padding bg-white">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Common Queries</h5>
+            <h2>Cardiology FAQ</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <div class="faq-accordion mt-5 max-w-800 mx-auto">
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What are the common symptoms of heart disease?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Common symptoms include chest pain or discomfort, shortness of breath, fatigue, irregular heartbeats, dizziness, and swelling in the legs or ankles.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What should I expect during my first visit to a cardiologist?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  During your initial visit, the cardiologist will review your medical history, perform a physical examination, and may conduct tests like an electrocardiogram (ECG) to assess your heart health.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How often should I have a heart health check-up?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  It's advisable to have heart health screenings at least every 2 to 4 years starting at age 20. However, individuals with risk factors may need more frequent check-ups as recommended by their healthcare provider.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What happens if my insurance claim is denied?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  If your insurance claim is denied, you can file an internal appeal with your insurer. This involves requesting a reconsideration of the decision, following the insurer's specific procedures.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                Can I use my company's health insurance for heart care at Supreme Multi Speciality Hospital?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  To determine if Supreme Multi Speciality Hospital accepts your company's health insurance, please contact our billing department or your insurance provider for confirmation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

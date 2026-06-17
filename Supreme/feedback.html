@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback | Supreme Speciality Hospital | Patient Experience</title>
+    <meta
+      name="description"
+      content="Share your experience with Supreme Speciality Hospital. Your feedback helps us provide better healthcare services."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body class="feedback-page">
+    <div id="header-placeholder"></div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO (Screenshot Style) -->
+      <section
+        class="hero-premium"
+        style="
+          background-image: url('images/feedback_banner.png');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Patient Feedback</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Your Voice Matters</h5>
+            <h1>Patient Experience <br />& Feedback</h1>
+            <p class="hero-subtitle">
+              We value your opinion and strive to improve our healthcare
+              services continuously. Please share your detailed feedback with us
+              regarding your recent visit.
+            </p>
+            <div class="hero-btns stagger-1">
+              <a
+                href="book-an-appointment.html"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Book Appointment</a
+              >
+              <a href="#feedback-form" class="btn btn-outline-white btn-lg px-5"
+                >Give Feedback</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: FEEDBACK FORM (Ultra-Premium Redesign) -->
+      <section id="feedback-form" class="section-padding bg-soft-blue">
+        <div class="container">
+          <div
+            class="feedback-container-premium glass-card box-shadow-xl p-5 fade-up"
+          >
+            <div class="feedback-header-section text-center mb-5">
+              <h2 class="display-5 fw-bold text-primary">
+                Healthcare Experience Survey
+              </h2>
+              <p class="text-muted fs-5">
+                Rate our services based on your recent medical visit to Supreme
+                Speciality Hospital.
+              </p>
+              <div class="title-line mx-auto"></div>
+            </div>
+
+            <form
+              id="supreme-feedback-form"
+              onsubmit="
+                event.preventDefault();
+                alert('Thank you for your valuable feedback!');
+              "
+            >
+              <!-- Survey Grid -->
+              <div class="survey-grid mt-5">
+                <!-- Question 1 -->
+                <div class="survey-card highlight-hover fade-up">
+                  <div class="survey-question">
+                    <span class="q-num">01</span>
+                    <h4>Admission Process at Registration Counter?</h4>
+                  </div>
+                  <div class="rating-options">
+                    <label class="rating-chip"
+                      ><input type="radio" name="q1" value="Excellent" /><span
+                        >Excellent</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q1" value="Good" /><span
+                        >Good</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q1" value="Average" /><span
+                        >Average</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q1" value="Poor" /><span
+                        >Poor</span
+                      ></label
+                    >
+                  </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="survey-card highlight-hover fade-up stagger-1">
+                  <div class="survey-question">
+                    <span class="q-num">02</span>
+                    <h4>The attitude & hospitality of nurses & other staff?</h4>
+                  </div>
+                  <div class="rating-options">
+                    <label class="rating-chip"
+                      ><input type="radio" name="q2" value="Excellent" /><span
+                        >Excellent</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q2" value="Good" /><span
+                        >Good</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q2" value="Average" /><span
+                        >Average</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q2" value="Poor" /><span
+                        >Poor</span
+                      ></label
+                    >
+                  </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="survey-card highlight-hover fade-up stagger-2">
+                  <div class="survey-question">
+                    <span class="q-num">03</span>
+                    <h4>Doctors attention & response?</h4>
+                  </div>
+                  <div class="rating-options">
+                    <label class="rating-chip"
+                      ><input type="radio" name="q3" value="Excellent" /><span
+                        >Excellent</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q3" value="Good" /><span
+                        >Good</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q3" value="Average" /><span
+                        >Average</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q3" value="Poor" /><span
+                        >Poor</span
+                      ></label
+                    >
+                  </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="survey-card highlight-hover fade-up stagger-3">
+                  <div class="survey-question">
+                    <span class="q-num">04</span>
+                    <h4>Maintenance and Cleanliness of the hospital?</h4>
+                  </div>
+                  <div class="rating-options">
+                    <label class="rating-chip"
+                      ><input type="radio" name="q4" value="Excellent" /><span
+                        >Excellent</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q4" value="Good" /><span
+                        >Good</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q4" value="Average" /><span
+                        >Average</span
+                      ></label
+                    >
+                    <label class="rating-chip"
+                      ><input type="radio" name="q4" value="Poor" /><span
+                        >Poor</span
+                      ></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Remarks Section -->
+              <div class="remarks-premium mt-5 fade-up">
+                <div class="floating-input-group">
+                  <textarea
+                    id="remarks"
+                    placeholder=" "
+                    class="form-control-premium"
+                    rows="4"
+                  ></textarea>
+                  <label for="remarks">Additional Remarks / Suggestions</label>
+                </div>
+              </div>
+
+              <!-- Patient Info Section -->
+              <div class="patient-info-strip mt-5 fade-up">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="floating-input-group">
+                      <input
+                        type="text"
+                        id="pname"
+                        placeholder=" "
+                        required
+                        class="form-control-premium"
+                      />
+                      <label for="pname">Patient Name / IP NO</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="floating-input-group">
+                      <input
+                        type="tel"
+                        id="pphone"
+                        placeholder=" "
+                        required
+                        class="form-control-premium"
+                      />
+                      <label for="pphone">Contact Number</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Global Experience Toggle -->
+              <div class="global-experience-card mt-4 fade-up">
+                <h3 class="fw-bold mb-4 text-center">
+                  Would you recommend Supreme Hospitals to your friends &
+                  relatives?
+                </h3>
+                <div class="premium-summary-options">
+                  <label class="summary-pill"
+                    ><input type="radio" name="recommend" value="Yes" /><span
+                      >Yes, Certainly</span
+                    ></label
+                  >
+                  <label class="summary-pill"
+                    ><input type="radio" name="recommend" value="No" /><span
+                      >No, Not Really</span
+                    ></label
+                  >
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="submit-wrap text-center mt-5">
+                <button type="submit" class="btn-premium-submit btn-glow">
+                  Submit Feedback <i class="fas fa-check-circle ml-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Premium Success Modal Overlay -->
+    <div id="feedback-success-modal" class="feedback-success-overlay">
+      <div class="success-modal-card">
+        <div class="success-checkmark-wrapper">
+          <i class="fas fa-check success-checkmark"></i>
+        </div>
+        <h2>Feedback Submitted!</h2>
+        <p>Thank you for sharing your experience. Your valuable response has been securely recorded and helps us continuously elevate our service standards.</p>
+        <button type="button" class="btn-success-close" onclick="closeSuccessModal()">Close</button>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Custom Modal Trigger Script -->
+    <script>
+      document.getElementById('supreme-feedback-form').removeAttribute('onsubmit');
+      document.getElementById('supreme-feedback-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const modal = document.getElementById('feedback-success-modal');
+        modal.classList.add('active');
+      });
+
+      function closeSuccessModal() {
+        const modal = document.getElementById('feedback-success-modal');
+        modal.classList.remove('active');
+        document.getElementById('supreme-feedback-form').reset();
+      }
+    </script>
+  </body>
+</html>

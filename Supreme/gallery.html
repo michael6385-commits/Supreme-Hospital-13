@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Supreme Speciality Hospital</title>
+    <meta
+      name="description"
+      content="View the gallery of Supreme Speciality Hospital featuring our advanced Operation Theaters, ICUs, NICUs, Suite Rooms, and more."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body class="gallery-page">
+    <div id="header-placeholder"></div>
+
+    <main>
+      <!-- PREMIUM HERO SECTION -->
+      <section
+        class="hero-premium"
+        style="
+          background-image: url('https://res.cloudinary.com/dr7jaclns/image/upload/904A6598-min-scaled_gnhxsp');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Gallery</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">A Glimpse of Excellence</h5>
+            <h1 class="text-white">Our Hospital Gallery</h1>
+            <p class="hero-subtitle" style="max-width: 700px">
+              Explore our state-of-the-art infrastructure, advanced medical
+              technology, and premium patient care facilities designed for
+              healing and comfort.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY CONTENT -->
+      <section class="section-padding bg-soft-blue">
+        <div class="container">
+          <!-- Filters matching source page -->
+          <div class="gallery-filters fade-up text-center mb-5">
+            <button class="gallery-filter-btn active" data-filter="all">
+              All
+            </button>
+            <button class="gallery-filter-btn" data-filter="operation-theater">
+              Operation Theater
+            </button>
+            <button class="gallery-filter-btn" data-filter="suite-room">
+              Suite Room
+            </button>
+            <button class="gallery-filter-btn" data-filter="nicu">NICU</button>
+            <button class="gallery-filter-btn" data-filter="icu">ICU</button>
+            <button class="gallery-filter-btn" data-filter="labour-ward">
+              Labour Ward
+            </button>
+            <button class="gallery-filter-btn" data-filter="pharmacy">
+              Pharmacy
+            </button>
+            <button class="gallery-filter-btn" data-filter="ambulance">
+              Ambulance
+            </button>
+          </div>
+
+          <!-- Gallery Grid -->
+          <div class="gallery-grid fade-up stagger-1" id="galleryGrid">
+            <!-- Images parsed from actual source -->
+            <div class="gallery-item" data-category="operation-theater">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917420/904A6619-min-scaled_r9uwm9.jpg"
+                  alt="Supreme Hospital Operation Theater"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="operation-theater">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917416/904A6610-min-scaled_sjyx7j.jpg"
+                  alt="Supreme Hospital Operation Theater with C-arm"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="operation-theater">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="images/gallery/904A6606-min-scaled.jpg"
+                  alt="Supreme Hospital Operation Theater anesthesia machine"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="suite-room">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917451/904A6639-min-scaled_hsa0ba.jpg"
+                  alt="Supreme Hospital Suite Room"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="suite-room">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917450/904A6638-min-scaled_xygrm8.jpg"
+                  alt="Supreme Hospital Suite Room Bed side"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="suite-room">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="images/gallery/904A6636-min-scaled.jpg"
+                  alt="Supreme Hospital Suite Room setup"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="suite-room">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917450/904A6633-min-scaled_njfsl0.jpg"
+                  alt="Supreme Hospital Suite Room TV area"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="icu">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917449/904A6624-min-scaled_yxwrtc.jpg"
+                  alt="Supreme Hospital ICU Ward beds"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="nicu">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917449/904A6630-min-scaled_p9ekxu.jpg"
+                  alt="Supreme Hospital NICU incubators"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="labour-ward">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/904A6601-min-scaled_vckppf"
+                  alt="Supreme Hospital Labour Ward delivery table"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="operation-theater">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917420/904A6616-min-scaled_yv7afn.jpg"
+                  alt="Supreme Hospital minor Operation Theater"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="labour-ward">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/904A6598-min-scaled_gnhxsp"
+                  alt="Supreme Hospital Labour Ward room"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="operation-theater">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917419/904A6613-min-scaled_xz8qt9.jpg"
+                  alt="Supreme Hospital Operation Theater bed"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="pharmacy">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917455/904A6652-min-scaled_oa3kub.jpg"
+                  alt="Supreme Hospital Pharmacy storage shelves"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="pharmacy">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1780917455/904A6648-min-scaled_o0jovt.jpg"
+                  alt="Supreme Hospital Pharmacy main desk"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="ambulance">
+              <div class="gallery-img-wrapper">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/904A0068-min-scaled_mgj0kh"
+                  alt="Supreme Hospital Ambulances lineup"
+                  loading="lazy"
+                />
+                <div class="gallery-hover-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Custom Image Modal for "Zoom" effect -->
+      <div id="galleryModal" class="gallery-modal">
+        <span class="gallery-modal-close">&times;</span>
+        <img class="gallery-modal-content" id="galleryExpandedImg" />
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Women’s Health & Maternity Care – Kelambakkam, Padur | Supreme Hospitals
+    </title>
+    <meta
+      name="description"
+      content="Supreme Hospitals in Kelambakkam offers expert gynecology & maternity care – from prenatal support to advanced women’s health treatments."
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body class="department-page">
+    <div id="header-placeholder"></div>
+
+    <!-- Floating CTA -->
+    <button
+      class="floating-cta ripple"
+      onclick="window.location.href = 'book-an-appointment.html'"
+    >
+      <span class="pulse-ring"></span>
+      <i class="fas fa-calendar-plus"></i>
+      <span>Book an Appointment</span>
+    </button>
+
+    <!-- Appointment Modal Form -->
+    <div class="modal-overlay" id="appointment-modal">
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Request an Appointment</h3>
+          <p>
+            Fill out the form below and our team will get back to you shortly.
+          </p>
+        </div>
+        <form class="appointment-form" onsubmit="event.preventDefault()">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="obstetrics-gynaecology" selected>
+                Obstetrics & Gynaecology
+              </option>
+              <option value="cardiology">Cardiology</option>
+              <option value="dental">Dental</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="diabetology">Diabetology</option>
+              <option value="psychiatry">Psychiatry</option>
+              <option value="ent">ENT</option>
+              <option value="general-surgery">General Surgery</option>
+              <option value="gastroenterology">Medical Gastroenterology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="ophthalmology">Ophthalmology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="pain-palliative-care">
+                Pain & Palliative Care
+              </option>
+              <option value="general-medicine">General Medicine</option>
+              <option value="urology">Urology</option>
+              <option value="radiology">Radiology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" required />
+          </div>
+          <div class="form-group full-width">
+            <textarea placeholder="Message / Symptoms" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width btn-glow">
+            Confirm Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO BANNER -->
+
+      <section
+        class="hero-premium"
+        style="
+          background-image: url('images/obs-gyn-banner.png');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Department</span> <i class="fas fa-chevron-right"></i>
+              <span class="current">Obstetrics & Gynaecology</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Supreme Excellence</h5>
+            <h1>Obstetrics & Gynaecology</h1>
+            <p class="hero-subtitle">
+              Comprehensive care for women at every stage of life – from expert
+              maternity support to advanced gynaecological wellness.
+            </p>
+            <div class="hero-btns mt-5 stagger-1">
+              <a
+                href="book-an-appointment.html"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Book Appointment</a
+              >
+              <a
+                href="contact-us.html"
+                class="btn btn-outline-white btn-lg px-5 ml-md-3"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- OVERVIEW: Excellence in Women's Health -->
+      <section class="partner-section section-padding bg-white">
+        <div class="container">
+          <div class="row align-center flex-wrap">
+            <div class="col-md-6 fade-up">
+              <h5 class="subtitle text-accent">Excellence in Women's Health</h5>
+              <h2>Overview</h2>
+              <div class="title-line mb-4"></div>
+              <p class="text-muted leading-relaxed mb-4">
+                We, at Supreme's Gynaecology and Obstetrics care provide
+                excellent care for pregnant women, right from prenatal till
+                labor and delivery, and postpartum care. Our obstetricians
+                monitor the health of both the mother and the developing fetus,
+                manage high-risk pregnancies, and handle complications.
+              </p>
+              <p class="text-muted leading-relaxed mb-5">
+                Our Gynaecologists focus on the diagnosis and treatment of
+                conditions related to the female reproductive system, providing
+                excellent guidance on menstrual disorders, fertility problems,
+                contraception, and menopause. We perform surgeries, both
+                minimally invasive and major, to treat diverse clinical
+                conditions with compassion and precision.
+              </p>
+            </div>
+            <div class="col-md-6 fade-up stagger-1 mt-sm-5 text-center">
+              <img
+                src="https://res.cloudinary.com/dr7jaclns/image/upload/v1781601289/56bb8e12-332b-4e3e-a169-7c930c5ef456_nbxush.png"
+                alt="Happy pregnant woman with doctor – Maternity &amp; Women's Care at Supreme Hospitals"
+                style="width:100%; max-width:520px; border-radius:16px; box-shadow:0 8px 40px rgba(4,107,210,0.13); object-fit:cover;"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: SUBSPECIALTIES (AUTO SCROLL) -->
+      <section class="treatments-scroll-section section-padding bg-soft-blue">
+        <div class="container-fluid p-0">
+          <div class="section-title text-center mb-5 fade-up">
+            <h5 class="subtitle text-accent">Specialized Clinical Focus</h5>
+            <h2>Subspecialties in O&G</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+
+          <div class="scroller-container mt-5">
+            <div class="scroller-inner">
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Maternal-Fetal Medicine</h3>
+                  <p class="text-sm text-muted">
+                    Expert management of high-risk pregnancies and medical
+                    complications affecting mother and fetus.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Reproductive Endocrinology</h3>
+                  <p class="text-sm text-muted">
+                    Addressing hormonal disorders and assisting with fertility
+                    issues through advanced medical treatments.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Gynaecologic Oncology</h3>
+                  <p class="text-sm text-muted">
+                    Diagnosis and treatment of cancers of the female
+                    reproductive system, including cervical and ovarian.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Minimally Invasive Surgery</h3>
+                  <p class="text-sm text-muted">
+                    Laparoscopic and robotic techniques reducing invasiveness
+                    and recovery time for surgical procedures.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Fertility Preservation</h3>
+                  <p class="text-sm text-muted">
+                    Increased focus on preserving reproductive capacity during
+                    medical treatments for clinical success.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- SECTION 2: SUBSPECIALTIES + VIDEO -->
+            <!-- SECTION 5: VIDEO INFO BLOCK -->
+      <section class="video-info-section section-padding bg-white">
+        <div class="container text-center">
+          <div class="fade-up">
+            <h2 style="color: #0b5b9c; font-weight: 600; font-size: 2.2rem; margin-bottom: 30px;">
+              Visit Supreme Hospital - Your Gateway to Premier Women's Care
+            </h2>
+          </div>
+          <div class="fade-up stagger-1 mb-4">
+            <div style="border: 3px solid #3b4252; border-radius: 24px; padding: 12px; display: inline-block; background: white; width: 100%; max-width: 500px;">
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/I_AaagFQOu0?start=15" title="Information Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="fade-up stagger-2">
+            <p style="color: #555; line-height: 1.8; font-size: 15px; margin: 0 auto 30px; max-width: 900px;">
+              Supreme Hospital understands the importance of comprehensive women's healthcare, aiming to significantly enhance your quality of life throughout pregnancy, childbirth, and beyond. We offer advanced maternity and neonatal facilities in one place to ensure comfort and safety for mother and child.
+            </p>
+          </div>
+          <div class="fade-up stagger-3">
+            <p style="font-weight: 700; font-size: 1.15rem; color: #111827; margin: 0;">
+              Explore obstetrics & gynaecology care at Supreme Hospital and begin your journey to maintain optimal reproductive health.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+            <!-- SECTION 6: EXPERTS / CONSULTANTS -->
+      <section class="consultants-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Medical Experts</h5>
+            <h2>Our Experts</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <!-- Swiper Consultants Carousel -->
+          <div class="swiper swiper-consultants mt-5">
+            <div class="swiper-wrapper">
+              <!-- Dr. Rini Ezhil -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Rini Ezhil</h4>
+                    <span class="doc-spec">MBBS, MS, OG</span>
+                    <ul class="doc-highlights">
+                      <li>Infertility & IVF Specialist</li>
+                      <li>High-Risk Pregnancy Care</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Dr. Shery Angel Rajkumar -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Shery Angel Rajkumar</h4>
+                    <span class="doc-spec">MBBS., MS(OBG) FMAS</span>
+                    <ul class="doc-highlights">
+                      <li>Chronic Pain Management</li>
+                      <li>Palliative & Terminal Care Support</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Dr. Sharmila Ganesan -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Sharmila Ganesan</h4>
+                    <span class="doc-spec">MBBS., MS(OBG)FMAS, DMAS (Lap Surgeon)</span>
+                    <ul class="doc-highlights">
+                      <li>Laparoscopic Gynaecology</li>
+                      <li>High-Risk Pregnancy Care</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        </div>
+      </section>
+
+      <!-- SECTION 7: FAQ -->
+      <section class="dept-faq-section section-padding bg-white">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Patient Guidance</h5>
+            <h2>Frequently Asked Questions</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <div class="faq-accordion mt-5 max-w-800 mx-auto">
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                When should I schedule my first prenatal appointment?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  You should schedule your first prenatal appointment as soon as you confirm your pregnancy, ideally around 6 to 8 weeks. Early care helps monitor your health, confirm the due date, and identify any potential risks. Your doctor will also guide you on supplements, lifestyle, and next steps.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                Are there any lifestyle changes I should make during pregnancy?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Yes, adopting a healthy lifestyle during pregnancy is essential. Focus on a balanced diet, regular prenatal checkups, moderate exercise, and adequate sleep. Avoid smoking, alcohol, and unnecessary medications. Managing stress and staying hydrated also support your baby's growth and your overall well-being.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What are the symptoms of a urinary tract infection (UTI)?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Common symptoms of a UTI include a strong urge to urinate, a burning sensation while urinating, cloudy or foul-smelling urine, and lower abdominal discomfort. Some may also experience fever or fatigue. Prompt treatment is important to prevent complications, especially during pregnancy.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How often should I have a gynecological exam?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Women should have a gynecological exam annually, or as advised by their doctor. Regular exams help monitor reproductive health, screen for infections or abnormalities, and detect early signs of cervical cancer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

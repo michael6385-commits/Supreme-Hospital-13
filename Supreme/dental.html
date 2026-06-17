@@ -1,0 +1,413 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Dental Clinic in Padur & Thiruporur | Supreme Hospitals</title>
+    <meta
+      name="description"
+      content="Supreme Smile at Supreme Hospitals offers expert dental care in Padur – from routine check-ups and root canals to advanced implants and aesthetics."
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+  </head>
+  <body class="department-page dental-page">
+    <div id="header-placeholder"></div>
+
+    <!-- Floating CTA -->
+    <button
+      class="floating-cta ripple"
+      onclick="window.location.href = 'book-an-appointment.html'"
+    >
+      <span class="pulse-ring"></span>
+      <i class="fas fa-calendar-plus"></i>
+      <span>Book an Appointment</span>
+    </button>
+
+    <!-- Appointment Modal Form -->
+    <div class="modal-overlay" id="appointment-modal">
+      <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Request an Appointment</h3>
+          <p>
+            Fill out the form below and our team will get back to you shortly.
+          </p>
+        </div>
+        <form class="appointment-form" onsubmit="event.preventDefault()">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="dental" selected>Dental</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="diabetology">Diabetology</option>
+              <option value="psychiatry">Psychiatry</option>
+              <option value="ent">ENT</option>
+              <option value="general-surgery">General Surgery</option>
+              <option value="gastroenterology">Medical Gastroenterology</option>
+              <option value="nephrology">Nephrology</option>
+              <option value="obstetrics-gynaecology">
+                Obstetrics & Gynaecology
+              </option>
+              <option value="orthopedics">Orthopedics</option>
+              <option value="pulmonology">Pulmonology</option>
+              <option value="ophthalmology">Ophthalmology</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="pain-palliative-care">
+                Pain & Palliative Care
+              </option>
+              <option value="general-medicine">General Medicine</option>
+              <option value="urology">Urology</option>
+              <option value="radiology">Radiology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" required />
+          </div>
+          <div class="form-group full-width">
+            <textarea placeholder="Message / Symptoms" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width btn-glow">
+            Confirm Request
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+      <!-- SECTION 1: PREMIUM HERO BANNER -->
+
+      <section
+        class="hero-premium dental text-center"
+        style="
+          background-image: url('../assets/banners/dental_page_banner_1920x600.png');
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container">
+          <div class="fade-up">
+            <div class="breadcrumb">
+              <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+              <span>Department</span> <i class="fas fa-chevron-right"></i>
+              <span class="current">Dental</span>
+            </div>
+            <h5 class="subtitle text-orange mb-3">Supreme Excellence</h5>
+            <h1>Department of Dental</h1>
+            <p class="hero-subtitle">
+              Unlock a lifetime of healthy smiles. Comprehensive clinical dental
+              treatments and advanced facial aesthetics in our world-class
+              facility.
+            </p>
+            <div class="hero-btns mt-5 stagger-1">
+              <a
+                href="book-an-appointment.html"
+                class="btn btn-primary btn-lg btn-glow px-5"
+                >Book Appointment</a
+              >
+              <a
+                href="contact-us.html"
+                class="btn btn-outline-white btn-lg px-5 ml-md-3"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: OVERVIEW -->
+      <section class="partner-section section-padding bg-white">
+        <div class="container">
+          <div class="row align-center flex-wrap">
+            <div class="col-md-6 fade-up">
+              <h5 class="subtitle text-accent">Radiant Oral Health</h5>
+              <h2>Overview</h2>
+              <div class="title-line mb-4"></div>
+              <p class="text-muted leading-relaxed mb-4">
+                Supreme Smile is the Dental and Aesthetics Department of the
+                renowned Supreme Specialty Hospital located in Padur. Our
+                commitment to excellence drives us to deliver a wide spectrum of
+                comprehensive dental services and aesthetic treatments for the
+                oral health, well-being, and radiance of our valued patients.
+              </p>
+              <p class="text-muted leading-relaxed mb-5">
+                Our advanced facility, experienced team of dental professionals,
+                and patient-centric approach make us the best dental hospital in
+                Padur. We provide solutions to challenging dental issues
+                including tooth decay, gum disease, and misaligned teeth,
+                cultivated through excellent oral hygiene practices.
+              </p>
+            </div>
+            <div class="col-md-6 fade-up stagger-1 mt-sm-5 text-center">
+              <div class="dept-media-card box-shadow">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1781084261/dental_overview_jsjymg.jpg"
+                  alt="Supreme Dental Overview"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: SPECIALITIES (AUTO SCROLL) -->
+      <section class="treatments-scroll-section section-padding bg-soft-blue">
+        <div class="container-fluid p-0">
+          <div class="section-title text-center mb-5 fade-up">
+            <h5 class="subtitle text-accent">Our Core Specialties</h5>
+            <h2>Advanced Dental Solutions</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+
+          <!-- Previous style: auto-scrolling cards -->
+          <div class="scroller-container mt-5">
+            <div class="scroller-inner">
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Root Canal</h3>
+                  <p class="text-sm text-muted">
+                    Essential procedure for saving infected teeth, relieving
+                    pain, and preserving your natural smile.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Wisdom Tooth</h3>
+                  <p class="text-sm text-muted">
+                    Skilled extraction of problematic teeth causing discomfort,
+                    ensuring smooth and painless processes.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Dental Aligners</h3>
+                  <p class="text-sm text-muted">
+                    A customized, discrete alternative to traditional braces for
+                    achieving a straighter, aligned smile.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>Dental Implants</h3>
+                  <p class="text-sm text-muted">
+                    Meticulously performed procedures to restore your smile’s
+                    functionality and clinical aesthetics.
+                  </p>
+                </div>
+              </div>
+              <div class="treatment-vibe-card">
+                <div class="treatment-vibe-content">
+                  <h3>PRP & Facelifts</h3>
+                  <p class="text-sm text-muted">
+                    Advanced cosmetic rejuvenation including Platelet-Rich
+                    Plasma therapy and the Vampire Facelift.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: DIAGNOSTIC & CLINICAL CARE (UNIQUE SOURCE SECTION) -->
+      <section class="clinical-care-section section-padding bg-white">
+        <div class="container">
+          <div class="row align-center">
+            <div class="col-md-6 fade-up">
+              <h5 class="subtitle text-accent">Solidifying Oral Health Excellence</h5>
+              <h2>Shining Light on Common Dental Concerns</h2>
+              <div class="title-line mb-4"></div>
+              <p class="text-muted leading-relaxed mb-4">
+                Maintaining your oral health is fundamental to your overall well-being. However dental problems can afflict individuals of all ages, from children to adults. If left unattended, it can cause discomfort, pain, and even systemic health concerns. Hence, Accurate diagnosis is the stepping stone for effective treatment and prevention, allowing you to unlock a lifetime of healthy smiles.
+              </p>
+              <p class="text-muted leading-relaxed mb-4">
+                Our team of expert dentists at Supreme Smile, provide solutions even to challenging dental issues. These issues encompass common concerns like tooth decay, gum disease, bad breath, tooth sensitivity, and misaligned teeth. To thwart these challenges, we make you cultivate good oral hygiene practices and even offer the best <strong>Dental Treatments</strong>.
+              </p>
+              <p class="text-muted leading-relaxed mb-4">
+                Prioritizing oral health and seeking professional guidance can lead to a lifetime of radiant smiles. Supreme Smile boasts a team of experienced orthodontists who provide expert care to each patient, solidifying our reputation as the best dental hospital in Kelambakkam.
+              </p>
+            </div>
+            <div class="col-md-6 fade-up stagger-1 mt-sm-5 text-center">
+              <div class="dept-media-card box-shadow concerns-banner">
+                <img
+                  src="https://res.cloudinary.com/dr7jaclns/image/upload/v1781084260/dental_concerns_collage_s5kt3u.jpg"
+                  alt="Common dental concerns"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5B: EXPERIENCE EXCELLENCE CTA -->
+      <section class="cta-premium-section" style="background-image: url('https://res.cloudinary.com/dr7jaclns/image/upload/v1780918304/appointment_bg_h2p6p2.jpg');">
+        <div class="cta-overlay-dark"></div>
+        <div class="container">
+          <div class="cta-glass-card fade-up text-center max-w-800 mx-auto">
+            <h5 class="subtitle text-accent mb-3">Supreme Smile Commitment</h5>
+            <h2>Experience Excellence in Oral Care</h2>
+            <div class="title-line mx-auto mb-4" style="background-color: var(--primary-blue);"></div>
+            <p class="mb-4 text-white opacity-90 leading-relaxed" style="font-size: 1.05rem; max-width: 100%;">
+              When it comes to your oral health, choosing the right dental hospital is paramount. At Supreme Smile, our dedication revolves around providing nothing short of the finest dental care. Our relentless pursuit of excellence has earned us the reputation as the best dental hospital in Padur. Don't compromise on your oral health. Visit Supreme Smile today for comprehensive dental services that cater to your needs. Our team of experts is here to provide you with a confident and healthy smile that lasts a lifetime.
+            </p>
+            <div class="cta-highlight-bar mb-4">
+              <i class="fas fa-calendar-check mr-2"></i> Schedule your appointment at the best dental hospital in Padur today!
+            </div>
+            <div>
+              <button class="btn btn-primary btn-lg btn-glow px-5" onclick="openModal()">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- SECTION 6: EXPERTS / CONSULTANTS -->
+      <section class="consultants-section section-padding bg-soft">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Dental Guidance Experts</h5>
+            <h2>Our Experts</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <!-- Swiper Consultants Carousel -->
+          <div class="swiper swiper-consultants mt-5">
+            <div class="swiper-wrapper">
+              <!-- Dr. Jessica Yolanda Jeevitha -->
+              <div class="swiper-slide">
+                <div class="doctor-card fade-up">
+                  <div class="doc-info text-left p-4">
+                    <h4>Dr. Jessica Yolanda Jeevitha</h4>
+                    <span class="doc-spec">BDS, MDS (Oral & Maxillofacial Surgery)</span>
+                    <ul class="doc-highlights">
+                      <li>Oral & Maxillofacial Surgery</li>
+                      <li>Advanced Dental Care & Implants</li>
+                    </ul>
+                    <a
+                      href="book-an-appointment.html"
+                      class="btn btn-primary btn-sm full-width mt-3"
+                      >Book Appointment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        </div>
+      </section>
+
+      <!-- SECTION 7: FAQ -->
+      <section class="dept-faq-section section-padding bg-white">
+        <div class="container">
+          <div class="section-title text-center fade-up">
+            <h5 class="subtitle text-accent">Smile Guidance</h5>
+            <h2>Frequently Asked Questions</h2>
+            <div class="title-line mx-auto"></div>
+          </div>
+          <div class="faq-accordion mt-5 max-w-800 mx-auto">
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                How often should I visit the dentist?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  You should visit the dentist every six months for a routine
+                  check-up and cleaning. Regular visits help detect dental
+                  issues early, maintain oral hygiene, and prevent more serious
+                  problems. Your dentist may recommend more frequent visits
+                  based on your oral health condition.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What can I expect during a dental check-up?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  During a dental check-up, your dentist examines your teeth,
+                  gums, and mouth for any signs of decay, gum disease, or other
+                  issues. It usually includes a professional cleaning to remove
+                  plaque and tartar, followed by personalized advice on
+                  maintaining good oral hygiene.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                What should I do in case of a dental emergency?
+                <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  In a dental emergency like a broken tooth, severe pain, or
+                  bleeding, contact your dentist immediately. Rinse your mouth
+                  with warm water, apply a cold compress to reduce swelling, and
+                  avoid chewing on the affected area. Prompt care helps prevent
+                  complications and relieves discomfort.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item fade-up">
+              <button class="accordion-header">
+                Is teeth whitening safe? <i class="fas fa-plus icon"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Yes, teeth whitening is generally safe when done by a dental
+                  professional. It uses approved bleaching agents that
+                  effectively lighten teeth without damaging enamel.
+                  Over-the-counter kits are available, but in-clinic treatments
+                  offer safer, faster, and more reliable results under expert
+                  supervision.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
